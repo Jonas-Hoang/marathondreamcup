@@ -2,12 +2,14 @@
   <Header />
   <BannerVid />
   <EventE />
+  <EventMap />
 </template>
 
 <script>
 import Header from "./components/Header/index.vue";
 import BannerVid from "./components/Banner/index.vue";
 import EventE from "./components/Event/index.vue";
+import EventMap from "./components/EventMap/index.vue";
 
 export default {
   name: "App",
@@ -15,6 +17,7 @@ export default {
     Header,
     BannerVid,
     EventE,
+    EventMap,
   },
 };
 </script>
