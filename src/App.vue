@@ -2,12 +2,14 @@
   <Header />
   <BannerVid />
   <EventE />
+  <PurposeJ />
 </template>
 
 <script>
-import Header from "./components/Header/index.vue";
-import BannerVid from "./components/Banner/index.vue";
-import EventE from "./components/Event/index.vue";
+import Header from "./components/Header/index";
+import BannerVid from "./components/Banner/index";
+import EventE from "./components/Event/index";
+import PurposeJ from "./components/Purpose/index";
 
 export default {
   name: "App",
@@ -15,6 +17,7 @@ export default {
     Header,
     BannerVid,
     EventE,
+    PurposeJ,
   },
 };
 </script>

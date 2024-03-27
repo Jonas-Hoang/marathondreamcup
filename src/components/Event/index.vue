@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 text-gray-100 relative">
+  <div class="advertise-section text-[#f1f1f1] relative">
     <section class="py-[65px]">
       <div class="bg section-bg fill bg-fill bg-loaded">
         <div class="section-bg-overlay absolute fill"></div>
