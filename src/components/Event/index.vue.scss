@@ -1,4 +1,5 @@
 @use 'sass:math';
+@import url(../../../assets/css/animation.scss);
 .section-bg {
     background-image: url(https://marathondreamcup.vn/wp-content/uploads/2023/06/12.webp);
     width: 100%;
@@ -24,7 +25,9 @@
 .section-content {
     position: relative !important;
     .row {
-        display: flex;
+        @media (min-width: 850px) {
+            display: flex;
+        }
         flex-direction: row;
         justify-content: center;
         margin-left: auto;

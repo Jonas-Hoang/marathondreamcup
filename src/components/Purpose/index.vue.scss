@@ -1,0 +1,51 @@
+.loaded {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tabbed-content {
+    width: 36%;
+}
+
+.col {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 1200px;
+}
+
+.tab {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.tab.active {
+    opacity: 1;
+}
+
+.tab.inactive {
+    opacity: 0.4 !important;
+    transition: opacity 0.5s ease;
+}
+
+img {
+    width: 720px;
+    height: 542px;
+    object-fit: cover;
+}
+
+.img-visible {
+    opacity: 1;
+}

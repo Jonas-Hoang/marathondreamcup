@@ -1,33 +1,23 @@
 <template>
-  <div class="purpose-join bg-red-100 w-auto section-content py-[60px]  relative">
-    <div class="flex items-center justify-center flex-col  bg-black">
-      <div>
-        <h2 class="mb-[30px] italic text-[#f1f1f1] text-[36px]">
-          <span>MỤC ĐÍCH <br><span style="color: #d6b571;">MARATHON DREAM CUP</span></span>
+  <div class="purpose-join bg-[#1D1D1D] w-auto section-content py-[60px] relative" id="purpose">
+    <div class="flex items-center flex-col">
+      <div class="col ml-auto mr-0">
+        <h2 class="mb-[30px] italic text-[#f1f1f1] text-[36px] font-[600]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay='500'>
+          <span>MỤC ĐÍCH <br /><span style="color: #d6b571">MARATHON DREAM CUP</span></span>
         </h2>
-        <div class="flex flex-row justify-center items-center">
-          <div class="tabbed-content w-[36%]">
+        <div class="flex flex-row justify-between items-center">
+          <div class="tabbed-content w-[36%] mr-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay='500'>
             <ul class="nav nav-line nav-vertical nav-normal nav-size-normal nav-left" role="tablist">
-              <li id="tab-gây-quỹ-từ-thiện" class="tab has-icon active" role="presentation"><a href="#tab_gây-quỹ-từ-thiện" role="tab" aria-selected="true" aria-controls="tab_gây-quỹ-từ-thiện"><span>Gây quỹ từ thiện</span></a></li>
-              <li id="tab-chinh-phục-giới-hạn-của-bản-thân" class="tab has-icon" role="presentation"><a href="#tab_chinh-phục-giới-hạn-của-bản-thân" role="tab" aria-selected="false" aria-controls="tab_chinh-phục-giới-hạn-của-bản-thân" tabindex="-1"><span>Chinh phục giới hạn của bản thân</span></a></li>
-              <li id="tab-trải-nghiệm-thể-thao-thú-vị" class="tab has-icon" role="presentation"><a href="#tab_trải-nghiệm-thể-thao-thú-vị" role="tab" aria-selected="false" aria-controls="tab_trải-nghiệm-thể-thao-thú-vị" tabindex="-1"><span>Trải nghiệm thể thao thú vị</span></a></li>
-              <li id="tab-giải-thưởng-vinh-danh-cao-quý" class="tab has-icon" role="presentation"><a href="#tab_giải-thưởng-vinh-danh-cao-quý" role="tab" aria-selected="false" aria-controls="tab_giải-thưởng-vinh-danh-cao-quý" tabindex="-1"><span>Giải thưởng vinh danh cao quý</span></a></li>
+              <li v-for="link in links" :key="link.id" :class="{ 'active': activeLinkId === link.id, 'inactive': activeLinkId !== link.id }" class="tab has-icon p-2.5 border-l-4 border-indigo-500" @click="setActiveLink(link.id)">
+                <span class="text-white text-[22px] font-[500]" role="button">{{ link.title }}</span>
+                <p class="text-[16px] text-[#8d8d8d] font-[300]">{{ link.description }}</p>
+              </li>
             </ul>
           </div>
-          <div class="tab-panels w-[100%] flex-1">
-            <div id="tab_gây-quỹ-từ-thiện" class="panel entry-content active" role="tabpanel" aria-labelledby="tab-gây-quỹ-từ-thiện">
-              <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1465066806">
-                <div data-animate="bounceInRight" data-animated="true">
-                  <div class="img-inner image-cover dark">
-                    <img width="720" height="542" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/chay-maraton-la-gi-5.jpg" data-src="https://marathondreamcup.vn/wp-content/uploads/2023/06/chay-maraton-la-gi-5.jpg" class="attachment-original size-original lazy-load-active" alt="" decoding="async" srcset="https://marathondreamcup.vn/wp-content/uploads/2023/06/chay-maraton-la-gi-5.jpg 720w, https://marathondreamcup.vn/wp-content/uploads/2023/06/chay-maraton-la-gi-5-300x226.jpg 300w" data-srcset="https://marathondreamcup.vn/wp-content/uploads/2023/06/chay-maraton-la-gi-5.jpg 720w, https://marathondreamcup.vn/wp-content/uploads/2023/06/chay-maraton-la-gi-5-300x226.jpg 300w" sizes="(max-width: 720px) 100vw, 720px">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
+          <img width="720" height="542" class="attachment-original size-original lazy-load-active rounded-[15px]" :src="activeLink.imageUrl" :alt="activeLink.title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500' ref="image" />
         </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -40,5 +30,58 @@ export default {
   },
 };
 </script>
+
+<script setup>
+import { ref } from "vue";
+
+let id = 0;
+const activeLinkId = ref(null);
+
+const links = ref([
+  {
+    id: id++,
+    title: "Gây quỹ từ thiện",
+    description:
+      "Là dịp để các runner tham gia chiến dịch 'chạy vì cộng đồng' thông qua hoạt động gây quỹ từ thiện",
+    imageUrl:
+      "https://marathondreamcup.vn/wp-content/uploads/2023/06/chay-maraton-la-gi-5.jpg",
+  },
+  {
+    id: id++,
+    title: "Chinh phục giới hạn của bản thân",
+    description:
+      "Khơi dậy bản lĩnh và khát khao chinh phục, bứt phá giới hạn bản thân. Tận hưởng niềm vui sướng mỗi khi bứt phá kỷ lục của bản thân",
+    imageUrl:
+      "https://marathondreamcup.vn/wp-content/uploads/2023/06/20210204_062037_294591_chay-bo.max-1800x1800-1-e1687222979541.jpg",
+  },
+  {
+    id: id++,
+    title: "Trải nghiệm thể thao thú vị",
+    description:
+      "Trải nghiệm thể thao thú vị, bởi không khí nào nhiệt và khung cảnh đặc sắc trên đường chạy. Đừng quên tận hưởng những nét đặc sắc của các cung đường chạy.",
+    imageUrl:
+      "https://marathondreamcup.vn/wp-content/uploads/2023/06/Jfit-Blog-MarathonTraining-2.jpg",
+  },
+  {
+    id: id++,
+    title: "Giải thưởng vinh danh cao quý",
+    description:
+      "Giải thưởng của ban tổ chức chỉ là phần nhỏ so với giải thưởng của chính mình, là sự nổ lực không ngại vượt khó.",
+    imageUrl:
+      "https://marathondreamcup.vn/wp-content/uploads/2023/06/crossing_the_finish_line.jpg",
+  },
+]);
+
+const setActiveLink = (id) => {
+  const link = links.value.find((link) => link.id === id);
+  activeLinkId.value = id;
+  activeLink.value = link; // Set the active link
+};
+
+const activeLink = ref(links.value[0]);
+
+setActiveLink(0);
+</script>
+
 
 <style lang="scss" scoped src="./index.vue.scss"></style>
