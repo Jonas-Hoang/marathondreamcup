@@ -38,7 +38,7 @@ export default {
     const selectedLink = ref("");
     const links = ref([
       { text: "GIỚI THIỆU SỰ KIỆN", href: "#about" },
-      { text: "QUY ĐỊNH VÀ ĐIỀU LỆ", href: "#purpose" },
+      { text: "QUY ĐỊNH VÀ ĐIỀU LỆ", href: "#term-section" },
       { text: "LỊCH TRÌNH & SƠ ĐỒ", href: "#" },
       { text: "ĐĂNG KÝ", href: "#" },
       { text: "TIN TỨC", href: "#" },
