@@ -1,0 +1,33 @@
+<template>
+  <div class="bg-gray-800 text-gray-100 relative">
+    <div class="bg section-bg fill bg-fill bg-loaded">
+      <div class="section-bg-overlay absolute fill">
+        <div class="content">
+          <div class="row">
+            <p>
+              Lệ phí tham gia của người thi chạy marathon sẽ được
+              <span class="hightlight-text">trích 100K</span> và<br />
+              được trao cho Hội Liên Hiệp Thanh Niên Việt Nam Thành Phố gửi
+              đến<br />
+              <span class="hightlight-text"
+                >những người có hoàn cảnh khó khăn.</span
+              >
+            </p>
+            <button><div class="button-content">Đăng ký ngay</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "SignUp",
+  props: {
+    msg: String,
+  },
+};
+</script>
+
+<style lang="scss" scoped src="./index.vue.scss"></style>
