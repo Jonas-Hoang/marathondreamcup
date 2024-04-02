@@ -7,7 +7,7 @@
       <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">
         <nav :class="{ 'flex': isMobileMenuOpen, 'hidden': !isMobileMenuOpen }" class="flex-col flex-grow lg:flex lg:flex-row lg:items-center lg:justify-around">
           <template v-for="link in links" :key="link.text">
-            <router-link v-if="link.type === 'router-link'" :to="{ name: link.name }" class="mt-3 lg:mt-0 whitespace-nowrap font-bold text-[#fdb912] hover:text-gray-100" :class="{ 'text-gray-100': selectedLink === link.text }">
+            <router-link v-if="link.type === 'router-link'" :to="{ name: link.name }" class="mt-3 lg:mt-0 whitespace-nowrap font-bold text-[#fdb912] hover:text-gray-100" @click="selectRouter(link)" :class="{ 'text-gray-100': selectedRouter === link.text }">
               {{ link.text }}
             </router-link>
             <a v-else :href="link.href" class="mt-3 lg:mt-0 whitespace-nowrap font-bold text-[#fdb912] hover:text-gray-100" @click="selectLink(link)" :class="{ 'text-gray-100': selectedLink === link.text }">
@@ -49,6 +49,7 @@ export default {
   setup() {
     const isMobileMenuOpen = ref(false);
     const selectedLink = ref("");
+    const selectedRouter = ref("");
     const links = ref([
       { text: "GIỚI THIỆU SỰ KIỆN", href: "#about", type: "a" },
       { text: "QUY ĐỊNH VÀ ĐIỀU LỆ", href: "#term-section", type: "a" },
@@ -66,17 +67,26 @@ export default {
         router.currentRoute.value.path === "/ket-qua"
       ) {
         selectedLink.value = link.text;
+        selectedRouter.value = "";
         router.replace({ path: "/" + router.replace({ path: "/home" }) + "" });
       } else {
         selectedLink.value = link.text;
+        selectedRouter.value = "";
       }
+    };
+
+    const selectRouter = (router) => {
+      selectedRouter.value = router.text;
+      selectedLink.value = "";
     };
 
     return {
       isMobileMenuOpen,
       links,
       selectedLink,
+      selectedRouter,
       selectLink,
+      selectRouter,
     };
   },
 };
