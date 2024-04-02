@@ -7,7 +7,7 @@
   <TermSection />
   <RegisterSection />
   <PrizeSection />
-
+  <BulletMenu />
 </template>
 
 <script setup>
@@ -36,6 +36,9 @@ const RegisterSection = defineAsyncComponent(() =>
 );
 const PrizeSection = defineAsyncComponent(() =>
   import("@/components/Prize/index.vue")
+);
+const BulletMenu = defineAsyncComponent(() =>
+  import("@/components/BulletMenu/index.vue")
 );
 </script>
 
