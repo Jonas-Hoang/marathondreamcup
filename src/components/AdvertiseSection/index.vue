@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: "EventE",
+  name: "AdvertiseSection",
   props: {
     msg: String,
   },

@@ -2,15 +2,10 @@
   <HomeView />
 </template>
 
-<script>
-import HomeView from "./views/home-view.vue";
+<script setup>
+import { defineAsyncComponent } from "vue";
 
-export default {
-  name: "App",
-  components: {
-    HomeView,
-  },
-};
+const HomeView = defineAsyncComponent(() => import("./views/home-view.vue"));
 </script>
 
 <style lang="scss" scoped src="../assets/css/main.scss"></style>

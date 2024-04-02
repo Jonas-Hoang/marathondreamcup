@@ -1,7 +1,7 @@
 <template>
   <BannerVid />
-  <AdterviseSection />
-  <PurposeJ />
+  <AdvertiseSection />
+  <PurposeJoin />
   <SignUp />
   <EventMap />
   <TermSection />
@@ -10,29 +10,33 @@
 
 </template>
 
-<script>
-import BannerVid from "@/components/BannerSection/index.vue";
-import AdterviseSection from "@/components/AdvertiseSection/index.vue";
-import PurposeJ from "@/components/PurposeJoin/index.vue";
-import SignUp from "@/components/SignUp/index.vue";
-import EventMap from "@/components/EventMap/index.vue";
-import TermSection from "@/components/TermSection/index.vue";
-import RegisterSection from "@/components/RegisterSection/index.vue";
-import PrizeSection from "@/components/Prize/index.vue";
+<script setup>
+import { defineAsyncComponent } from "vue";
 
-export default {
-  name: "BodyView",
-  components: {
-    BannerVid,
-    AdterviseSection,
-    PurposeJ,
-    SignUp,
-    EventMap,
-    TermSection,
-    RegisterSection,
-    PrizeSection,
-  },
-};
+const BannerVid = defineAsyncComponent(() =>
+  import("@/components/BannerSection/index.vue")
+);
+const AdvertiseSection = defineAsyncComponent(() =>
+  import("@/components/AdvertiseSection/index.vue")
+);
+const PurposeJoin = defineAsyncComponent(() =>
+  import("@/components/PurposeJoin/index.vue")
+);
+const SignUp = defineAsyncComponent(() =>
+  import("@/components/SignUp/index.vue")
+);
+const EventMap = defineAsyncComponent(() =>
+  import("@/components/EventMap/index.vue")
+);
+const TermSection = defineAsyncComponent(() =>
+  import("@/components/TermSection/index.vue")
+);
+const RegisterSection = defineAsyncComponent(() =>
+  import("@/components/RegisterSection/index.vue")
+);
+const PrizeSection = defineAsyncComponent(() =>
+  import("@/components/Prize/index.vue")
+);
 </script>
 
 <style lang="scss" scoped src="../../assets/css/main.scss"></style>

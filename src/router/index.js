@@ -1,27 +1,22 @@
-// router/index.js
-import {
-    createRouter,
-    createWebHashHistory,
-    createWebHistory,
-} from "vue-router";
-import Body from "@/views/body-view.vue";
-import FindPicture from "@/views/find-picture.vue";
-import ResultRunning from "@/views/result-running.vue";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [{
         path: "/",
         name: "Body",
-        component: Body,
+        component: () =>
+            import ("@/views/body-view.vue"),
     },
     {
         path: "/tim-anh",
         name: "FindPicture",
-        component: FindPicture,
+        component: () =>
+            import ("@/views/find-picture.vue"),
     },
     {
         path: "/ket-qua",
         name: "ResultRunning",
-        component: ResultRunning,
+        component: () =>
+            import ("@/views/result-running.vue"),
     },
     {
         path: "/:pathMatch(.*)*",
@@ -30,9 +25,7 @@ const routes = [{
 ];
 
 const router = createRouter({
-    //history: createWebHistory(),
-    history: createWebHistory(process.env.BASE_URL), // This line is key
-
+    history: createWebHistory(process.env.BASE_URL),
     routes,
 });
 
