@@ -7,10 +7,10 @@
         </div>
         <div class="section-content relative">
           <div class="row align-middle">
-            <div class="col medium-5 small-12 large-5 " data-aos="fade-right" data-aos-duration="1000" data-aos-delay='500' data-aos-offset="200">
+            <div class="col medium-5 small-12 large-5 " data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
               <img width="1138" height="1894" src="https://marathondreamcup.vn/wp-content/uploads/2023/07/hang-muc-chinh-F_standee-0m8x1m8-scaled-e1690425687244.jpg" data-src="https://marathondreamcup.vn/wp-content/uploads/2023/07/hang-muc-chinh-F_standee-0m8x1m8-scaled-e1690425687244.jpg" />
             </div>
-            <div class="col medium-5 small-12 large-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500'>
+            <div class="col medium-5 small-12 large-7" data-aos="fade-left" data-aos-duration="1000">
               <div class="flex flex-col justify-center">
                 <h2 class="font-bold uppercase size italic text-4xl text-start mb-4">
                   Sải bước chiến thắng cùng

@@ -4,12 +4,12 @@
       <div class="section-bg-overlay absolute fill">
         <div class="content">
           <div class="row">
-            <div class="col">
+            <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
               <h2>Chương trình</h2>
               <img src="../../../assets/images/lich_trinh.jpeg" alt="lich trinh su kien" />
             </div>
             <div class="devider"></div>
-            <div class="col">
+            <div class="col" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
               <h2>
                 <span>Sơ đồ </span>
                 <span style="color: #2d63f7">Đường chạy</span>

@@ -6,6 +6,7 @@
   <EventMap />
   <TermSection />
   <RegisterSection />
+  <PrizeSection />
 
 </template>
 
@@ -17,6 +18,7 @@ import SignUp from "@/components/SignUp/index.vue";
 import EventMap from "@/components/EventMap/index.vue";
 import TermSection from "@/components/TermSection/index.vue";
 import RegisterSection from "@/components/RegisterSection/index.vue";
+import PrizeSection from "@/components/Prize/index.vue";
 
 export default {
   name: "BodyView",
@@ -28,6 +30,7 @@ export default {
     EventMap,
     TermSection,
     RegisterSection,
+    PrizeSection,
   },
 };
 </script>
