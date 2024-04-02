@@ -8,6 +8,7 @@
   <RegisterSection />
   <PrizeSection />
   <BulletMenu />
+  <ContactMenuButton />
 </template>
 
 <script setup>
@@ -39,6 +40,9 @@ const PrizeSection = defineAsyncComponent(() =>
 );
 const BulletMenu = defineAsyncComponent(() =>
   import("@/components/BulletMenu/index.vue")
+);
+const ContactMenuButton = defineAsyncComponent(() =>
+  import("@/components/ContactMenuButton/index.vue")
 );
 </script>
 
