@@ -28,36 +28,13 @@
   </nav>
 </template>
 
-<script>
+<script setup>
 import { ref } from "vue";
 
-export default {
-  name: "HeaderBar",
-  setup() {
-    const isMobileMenuOpen = ref(false);
-    const selectedLink = ref("");
-    const links = ref([
-      { text: "GIỚI THIỆU SỰ KIỆN", href: "#about" },
-      { text: "QUY ĐỊNH VÀ ĐIỀU LỆ", href: "#term-section" },
-      { text: "LỊCH TRÌNH & SƠ ĐỒ", href: "#" },
-      { text: "ĐĂNG KÝ", href: "#" },
-      { text: "TIN TỨC", href: "#" },
-      { text: "ĐỐI TÁC", href: "#" },
-      { text: "TÌM ẢNH", href: "#" },
-      { text: "KẾT QUẢ", href: "#" },
-    ]);
-
-    const selectLink = (link) => {
-      selectedLink.value = link.text;
-      // You can also navigate programmatically here if needed
-    };
-
-    return {
-      isMobileMenuOpen,
-      links,
-      selectedLink,
-      selectLink,
-    };
-  },
-};
+const slides = ref([
+  { id: "1", url: "../../../assets/images/roapmap.jpg™ }" },
+  { id: "2", url: "../../../assets/images/roapmap.jpg™ }" },
+  { id: "3", url: "../../../assets/images/roapmap.jpg™ }" },
+]);
 </script>
+

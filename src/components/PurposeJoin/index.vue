@@ -14,7 +14,9 @@
               </li>
             </ul>
           </div>
-          <img width="720" height="542" class="rounded-[15px] mobile:!h-[50%] mobile:mt-[20px]" :src="activeLink.imageUrl" :alt="activeLink.title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500' ref="image" />
+          <div class="rounded-[15px]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500'>
+            <img class="rounded-[15px]" :src="activeLink.imageUrl" :alt="activeLink.title" ref="image" />
+          </div>
         </div>
       </div>
 
@@ -33,6 +35,10 @@ export default {
 
 <script setup>
 import { ref } from "vue";
+import picture1 from "../../../assets/images/picture1.jpeg";
+import picture2 from "../../../assets/images/picture2.jpg";
+import picture3 from "../../../assets/images/picture3.jpeg";
+import picture4 from "../../../assets/images/picture4.jpeg";
 
 let id = 0;
 const activeLinkId = ref(null);
@@ -43,32 +49,28 @@ const links = ref([
     title: "Gây quỹ từ thiện",
     description:
       "Là dịp để các runner tham gia chiến dịch 'chạy vì cộng đồng' thông qua hoạt động gây quỹ từ thiện",
-    imageUrl:
-      "https://marathondreamcup.vn/wp-content/uploads/2023/06/chay-maraton-la-gi-5.jpg",
+    imageUrl: picture1,
   },
   {
     id: id++,
     title: "Chinh phục giới hạn của bản thân",
     description:
       "Khơi dậy bản lĩnh và khát khao chinh phục, bứt phá giới hạn bản thân. Tận hưởng niềm vui sướng mỗi khi bứt phá kỷ lục của bản thân",
-    imageUrl:
-      "https://marathondreamcup.vn/wp-content/uploads/2023/06/20210204_062037_294591_chay-bo.max-1800x1800-1-e1687222979541.jpg",
+    imageUrl: picture2,
   },
   {
     id: id++,
     title: "Trải nghiệm thể thao thú vị",
     description:
       "Trải nghiệm thể thao thú vị, bởi không khí nào nhiệt và khung cảnh đặc sắc trên đường chạy. Đừng quên tận hưởng những nét đặc sắc của các cung đường chạy.",
-    imageUrl:
-      "https://marathondreamcup.vn/wp-content/uploads/2023/06/Jfit-Blog-MarathonTraining-2.jpg",
+    imageUrl: picture3,
   },
   {
     id: id++,
     title: "Giải thưởng vinh danh cao quý",
     description:
       "Giải thưởng của ban tổ chức chỉ là phần nhỏ so với giải thưởng của chính mình, là sự nổ lực không ngại vượt khó.",
-    imageUrl:
-      "https://marathondreamcup.vn/wp-content/uploads/2023/06/crossing_the_finish_line.jpg",
+    imageUrl: picture4,
   },
 ]);
 
