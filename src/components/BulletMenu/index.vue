@@ -1,17 +1,47 @@
 <template>
   <div class="scroll-to-bullets hide-for-medium">
-    <a href="#about" data-title="Thông tin chung" class="tooltipstered"></a>
-    <a href="#event-map" data-title="Lịch trrình &amp; sơ đồ" class="active tooltipstered"></a>
-    <a href="#term-section" data-title="Quy định và điều lệ" class="tooltipstered"></a>
-    <a href="#sign-up" data-title="Đăng ký" class="tooltipstered"></a>
-    <a href="#tin-tuc" data-title="Tin tức" title="Tin tức"></a>
-    <a href="#doi-tac" data-title="Đối tác" title="Đối tác"></a>
+    <a v-for="(section, index) in sections" :key="index" :href="section.href" @click="scrollToSection" :data-title="section.title" class="tooltipstered">
+      <el-tooltip :content="section.title" placement="top"></el-tooltip>
+    </a>
   </div>
 </template>
-<script>
-export default {
-  name: "BulletMenu",
+
+<script setup>
+import { ElTooltip } from "element-plus";
+
+import { ref, onMounted } from "vue";
+
+const sections = ref([
+  { title: "Thông tin chung", href: "#about" },
+  { title: "Lịch trình & sơ đồ", href: "#event-map" },
+  { title: "Quy định và điều lệ", href: "#term-section" },
+  { title: "Đăng ký", href: "#sign-up" },
+  { title: "Tin tức", href: "#tin-tuc" },
+  { title: "Đối tác", href: "#doi-tac" },
+]);
+
+const scrollToSection = (event) => {
+  // Implement your scrollToSection logic here
 };
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Logic when a section is in view
+        }
+      });
+    },
+
+    { threshold: 0.5 }
+  );
+
+  // Assuming you have a way to reference the actual DOM elements
+  // sectionRefs.value.forEach((section) => {
+  //   observer.observe(section);
+  // });
+});
 </script>
 
 <style lang="scss" scoped src="./index.vue.scss"></style>

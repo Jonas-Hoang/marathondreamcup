@@ -1,6 +1,5 @@
 .scroll-to-bullets {
     max-height: 100vh;
-    overflow: hidden;
     position: fixed;
     right: 0;
     top: 50%;
@@ -23,4 +22,23 @@
             border-color: #141414;
         }
     }
+}
+
+.tooltipstered {
+    position: relative;
+}
+
+.tooltipstered:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 50%;
+    right: 190%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 999;
 }
