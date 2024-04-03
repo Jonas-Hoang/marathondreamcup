@@ -2,7 +2,7 @@
   <nav class="flex flex-wrap items-center justify-between px-2 py-3 pb-[20px] bg-[#3055A6] text-gray-100 sticky top-0 z-50">
     <div class="w-[100%] h-[70px] px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class=" relative flex justify-between lg:w-auto  pr-4 lg:static lg:block lg:justify-start">
-        <a href="/home"><img src="../../assets/images/logo_RDC2024.png" alt="Logo" class="h-[80px]" /></a>
+        <a href="/home"><img src="../../assets/images/logo_RDC2024.png" alt="logo" class="h-[80px]" /></a>
       </div>
       <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">
         <nav :class="{ 'flex': isMobileMenuOpen, 'hidden': !isMobileMenuOpen }" class="flex-col flex-grow lg:flex lg:flex-row lg:items-center lg:justify-around">

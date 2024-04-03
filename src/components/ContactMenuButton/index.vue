@@ -8,7 +8,7 @@
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#1877f2]">
             <a target="_blank" href="https://www.facebook.com/groups/586173493503073">
-              <img src="https://marathondreamcup.vn/wp-content/plugins/button-contact-vr/img/Facebook.png">
+              <img src="../../../assets/images/facebook-logo.png" alt="facbook-logo">
             </a>
           </div>
         </div>
@@ -21,7 +21,7 @@
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#1877f2]">
             <a target="_blank" href="https://zalo.me/0367755266">
-              <img src="https://marathondreamcup.vn/wp-content/plugins/button-contact-vr/img/zalo.png">
+              <img src="../../../assets/images/zalo-logo.png" alt="zalo-logo">
             </a>
           </div>
         </div>
@@ -34,7 +34,7 @@
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#81d742]">
             <a href="tel:0367755266">
-              <img src="https://marathondreamcup.vn/wp-content/plugins/button-contact-vr/img/phone.png">
+              <img src="../../../assets/images/phone-logo.png" alt="phone-logo">
             </a>
           </div>
         </div>

@@ -24,7 +24,7 @@
             </div>
             <div class="col medium-5 small-12 large-5 " style="paddingp-bottom: 0 !important;" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
               <div class="flex flex-col justify-center">
-                <img width="816" height="929" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/dat-ve-ngay-23.png" />
+                <img width="816" height="929" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/dat-ve-ngay-23.png" alt="term-image" />
               </div>
             </div>
           </div>
