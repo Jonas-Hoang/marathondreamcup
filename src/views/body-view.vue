@@ -7,6 +7,7 @@
   <TermSection />
   <RegisterSection />
   <PrizeSection />
+  <News />
   <BulletMenu />
   <ContactMenuButton />
 </template>
@@ -44,6 +45,7 @@ const BulletMenu = defineAsyncComponent(() =>
 const ContactMenuButton = defineAsyncComponent(() =>
   import("@/components/ContactMenuButton/index.vue")
 );
+const News = defineAsyncComponent(() => import("@/components/News/index.vue"));
 </script>
 
 <style lang="scss" scoped src="../../assets/css/main.scss"></style>

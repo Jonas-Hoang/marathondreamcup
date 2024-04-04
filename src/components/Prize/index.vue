@@ -4,9 +4,20 @@
       <div class="section-bg-overlay absolute fill">
         <div class="content">
           <div class="row">
-            <Carousel :items-to-show="2" :wrap-around="true" :autoplay="3000" :transition="1000" v-model="currentSlide">
+            <Carousel
+              :items-to-show="2"
+              snapAlign="start"
+              :wrap-around="true"
+              :autoplay="3000"
+              :transition="1000"
+            >
               <Slide v-for="slide in slides" :key="slide.id">
-                <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+                <div
+                  class="col"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200"
+                >
                   <h2>{{ slide.title }}</h2>
                   <img :src="slide.url" alt="so do duong chay" />
                 </div>
