@@ -21,12 +21,12 @@
                 <div class="row row-small" id="row-1548907457">
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
-                      <img width="1920" height="1080" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/TICKET1.png" />
+                      <img width="1920" height="1080" src="../../../assets/images/ticket200.png" alt="ticket200" />
                     </a>
                   </div>
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
-                      <img width="1920" height="1080" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/2.png" />
+                      <img width="1920" height="1080" src="../../../assets/images/ticket300.png" alt="ticket300" />
                     </a>
                   </div>
                 </div>
@@ -41,16 +41,19 @@
                 <div class="row row-small" id="row-1548907457">
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
-                      <img width="1920" height="1080" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/1.png" />
+                      <img width="1920" height="1080" src="../../../assets/images/ticket250.png" alt="ticket250" />
                     </a>
                   </div>
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
-                      <img width="1920" height="1080" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/2023-06-18_160929.png" />
+                      <img width="1920" height="1080" src="../../../assets/images/ticket400.png" alt="ticket400" />
                     </a>
                   </div>
                 </div>
               </div>
+              <button @click="openForm">
+                <div class="button-content">Đăng ký ngay</div>
+              </button>
             </div>
           </div>
         </div>
@@ -64,6 +67,11 @@ export default {
   name: "TermSection",
   props: {
     msg: String,
+  },
+  methods: {
+    openForm() {
+      window.open("https://forms.gle/X77gRWWHBweG4bB28", "_blank");
+    },
   },
 };
 </script>

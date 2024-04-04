@@ -49,6 +49,24 @@
     background-color: rgba(0, 80, 202, 0.907);
 }
 
+button {
+    background-color: rgb(230, 195, 125);
+    border-radius: 20px;
+    color: #000;
+    font-weight: 700;
+    width: 37%;
+    margin-top: 30px;
+}
+
+button:hover,
+button:active {
+    background-color: rgb(245, 202, 102);
+}
+
+.button-content {
+    padding: 10px 30px;
+}
+
 .col {
     display: flex;
     justify-content: center;

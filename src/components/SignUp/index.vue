@@ -11,7 +11,7 @@
               đến<br />
               <span class="hightlight-text">những người có hoàn cảnh khó khăn.</span>
             </p>
-            <button>
+            <button @click="openForm">
               <div class="button-content">Đăng ký ngay</div>
             </button>
           </div>
@@ -26,6 +26,11 @@ export default {
   name: "SignUp",
   props: {
     msg: String,
+  },
+  methods: {
+    openForm() {
+      window.open("https://forms.gle/X77gRWWHBweG4bB28", "_blank");
+    },
   },
 };
 </script>
