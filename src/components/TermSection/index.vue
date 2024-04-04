@@ -8,9 +8,7 @@
         <div class="section-content relative">
           <div class="row align-middle">
             <div class="col medium-5 small-12 large-7" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="200">
-              <h2 class="font-bold uppercase size italic text-4xl text-start mb-4">
-                ĐIỀU KHOẢN & ĐIỀU KIỆN
-              </h2>
+              <h2 class="font-bold uppercase size italic text-4xl text-start mb-4">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
               <p class="text-[19px] font-[300]">Running Diamond Cup 2024</p>
               <a class="button bg-[#ddc180] my-[20px] text-black px-[1.2em] max-w-[100%] text-[1.12em]" rel="noopener noreferrer" href="https://drive.google.com/file/d/1JgNWajG0Ic7oPdpE4PSE_zCyfR0LZixx/view?usp=sharing" target="_blank" style="border-radius: 99px"><span>Đọc kỹ điều khoản &amp; điều kiện</span><i class="icon-angle-right" aria-hidden="true"></i></a>
               <div id="timer-1036666101" class="ux-timer">
