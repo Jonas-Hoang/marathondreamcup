@@ -6,20 +6,22 @@
     <div id="advertise-section">
       <AdvertiseSection />
     </div>
-    <PurposeJoin />
+    <div id="term-section">
+      <PurposeJoin />
+    </div>
     <div id="term-section">
       <TermSection />
     </div>
     <div id="event-map">
       <EventMap />
     </div>
-    <div id="sign-up">
+    <div id="event-map">
       <SignUp />
     </div>
     <div id="sign-up">
       <RegisterSection />
     </div>
-    <div id="prize-section">
+    <div id="sign-up">
       <PrizeSection />
     </div>
     <div id="bullet-menu">
@@ -47,8 +49,8 @@ const sections = ref([
     id: "advertise-section",
   },
   { title: "Quy định và điều lệ", href: "#term-section", id: "term-section" },
-  { title: "Đăng ký", href: "#sign-up", id: "sign-up" },
   { title: "Lịch trình & sơ đồ", href: "#event-map", id: "event-map" },
+  { title: "Đăng ký", href: "#sign-up", id: "sign-up" },
   { title: "Tin tức", href: "#tin-tuc", id: "news" },
   { title: "Đối tác", href: "#doi-tac", id: "partner" },
 ]);
@@ -94,10 +96,15 @@ const checkScroll = () => {
 
   elements.forEach((element, index) => {
     const rect = element.getBoundingClientRect();
-    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+    const isVisible =
+      rect.top < window.innerHeight && rect.bottom >= 0 && rect.top >= 0;
+
     if (isVisible) {
       if (!loggedElements.has(element.id)) {
         activeLinkId.value = element.id;
+        console.log(`topppp is ${rect.top}`);
+        console.log(`window innerHeight is ${window.innerHeight}`);
+        console.log(`bottom is ${rect.bottom}`);
         if (index + 1 < elements.length) {
           const nextElement = elements[index + 1];
         }

@@ -1,3 +1,4 @@
+@import url(../../../assets/css/animation.scss);
 #button-contact-vr {
     max-height: 100vh;
     overflow: hidden;
@@ -37,16 +38,23 @@
         bottom: 0;
         display: block;
         .phone-vr-circle-fill {
-            box-shadow: 0 0 0 0 rgb(24 119 242 / 65%);
-            background-color: rgb(24 119 242 / 70%);
             width: 65px;
             height: 65px;
             top: 12px;
             left: 12px;
             position: absolute;
-            box-shadow: 0 0 0 0 #c31d1d;
+            box-shadow: 0 0 0 0 rgb(24 119 242 / 65%);
+            background-color: rgb(24 119 242 / 70%);
             border-radius: 50%;
             border: 2px solid transparent;
+            -webkit-animation: phonevrcirclefill 2.3s infinite ease-in-out;
+            animation: phonevrcirclefill 2.3s infinite ease-in-out;
+            transition: all .5s;
+            -webkit-transform-origin: 50% 50%;
+            -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            -webkit-animation: zoom 1.3s infinite;
+            animation: zoom 1.3s infinite;
         }
         .phone-vr-img-circle {
             background-color: #e60808;
@@ -60,12 +68,42 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
-            // -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
-            // animation: phone-vr-circle-fill 1s infinite ease-in-out;
+            animation: phonevrcirclefill 1s infinite ease-in-out;
             img {
-                max-width: 35px;
-                max-height: 35px;
+                max-height: 25px;
+                max-width: 27px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
             }
         }
+    }
+}
+
+@keyframes phonevrcirclefill {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
     }
 }
