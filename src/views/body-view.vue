@@ -32,6 +32,9 @@
     <div id="contact-menu-button">
       <ContactMenuButton />
     </div>
+    <div id="partner">
+      <Footter />
+    </div>
   </div>
 </template>
 
@@ -89,6 +92,9 @@ const PrizeSection = defineAsyncComponent(() =>
 );
 const ContactMenuButton = defineAsyncComponent(() =>
   import("@/components/ContactMenuButton/index.vue")
+);
+const Footter = defineAsyncComponent(() =>
+  import("@/components/Footter/index.vue")
 );
 
 const checkScroll = () => {
