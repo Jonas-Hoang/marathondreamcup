@@ -1,16 +1,16 @@
 <template>
-  <nav class="flex flex-wrap items-center justify-between px-2 py-3 pb-[20px] bg-[#3055A6] text-gray-100 sticky top-0 z-50">
-    <div class="w-[100%] h-[70px] px-4 mx-auto flex flex-wrap items-center justify-between">
+  <nav class="flex flex-wrap items-center justify-between px-2 py-3 bg-[#3055A6] text-gray-100 sticky top-0 z-50">
+    <div class="w-[100%] px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class=" relative flex justify-between lg:w-auto  pr-4 lg:static lg:block lg:justify-start">
-        <a href="/" @click="scrollTo"><img src="../../assets/images/logo_RDC2024.png" alt="logo" class="h-[80px]" /></a>
+        <a href="/" @click="scrollTo"><img src="../../assets/images/logo_RDC2024.png" alt="logo" class="h-[60px]" /></a>
       </div>
       <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">
         <nav :class="{ 'flex': isMobileMenuOpen, 'hidden': !isMobileMenuOpen }" class="flex-col flex-grow lg:flex lg:flex-row lg:items-center lg:justify-around">
           <template v-for="link in links" :key="link.text">
-            <router-link v-if="link.type === 'router-link'" :to="{ name: link.name }" class="mt-3 lg:mt-0 whitespace-nowrap font-bold text-[#fdb912] hover:text-gray-100" @click="selectRouter(link)" :class="{ 'text-gray-100': selectedRouter === link.text }">
+            <router-link v-if="link.type === 'router-link'" :to="{ name: link.name }" class="text-[15px] mt-3 lg:mt-0 whitespace-nowrap font-bold text-[#fdb912] hover:text-gray-100" @click="selectRouter(link)" :class="{ 'text-gray-100': selectedRouter === link.text }">
               {{ link.text }}
             </router-link>
-            <a v-else :href="link.href" class="mt-3 lg:mt-0 whitespace-nowrap font-bold text-[#fdb912] hover:text-gray-100" @click="selectLink(link)" :class="{ 'text-gray-100': selectedLink === link.text }">
+            <a v-else :href="link.href" class="mt-3 lg:mt-0 whitespace-nowrap font-bold text-[15px] text-[#fdb912] hover:text-gray-100" @click="selectLink(link)" :class="{ 'text-gray-100': selectedLink === link.text }">
               {{ link.text }}
             </a>
           </template>
@@ -55,8 +55,8 @@ export default {
       { text: "QUY ĐỊNH VÀ ĐIỀU LỆ", href: "#term-section", type: "a" },
       { text: "LỊCH TRÌNH & SƠ ĐỒ", href: "#event-map", type: "a" },
       { text: "ĐĂNG KÝ", href: "#sign-up", type: "a" },
-      { text: "TIN TỨC", href: "#", type: "a" },
-      { text: "ĐỐI TÁC", href: "#", type: "a" },
+      { text: "TIN TỨC", href: "#news", type: "a" },
+      { text: "ĐỐI TÁC", href: "#partner", type: "a" },
       { text: "TÌM ẢNH", name: "FindPicture", type: "router-link" },
       { text: "KẾT QUẢ", name: "ResultRunning", type: "router-link" },
     ]);

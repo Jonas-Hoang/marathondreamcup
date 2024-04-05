@@ -4,8 +4,8 @@
       <div class="section-bg-overlay absolute fill">
         <div class="content">
           <div class="row">
-            <h1>Tin Tức - Sự Kiện</h1>
-            <Carousel :items-to-show="3" snapAlign="start" :wrap-around="true" :autoplay="5000" :transition="1000">
+            <h1 class="!text-[#2d63f7]">Tin Tức - Sự Kiện</h1>
+            <Carousel :items-to-show="3" snapAlign="start" :wrap-around="true" :autoplay="100000" :transition="1000">
               <Slide v-for="slide in slides" :key="slide.id" class="draggable">
                 <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
                   <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag"><img :src="slide.img" alt="so do duong chay" /></div>

@@ -26,27 +26,19 @@
     </div>
     <div id="bullet-menu">
       <div class="scroll-to-bullets hide-for-medium">
-        <a
-          v-for="(section, index) in sections"
-          :key="index"
-          :href="section.href"
-          @click="scrollToSection"
-          :data-title="section.title"
-          class="tooltipstered"
-          :class="{
+        <a v-for="(section, index) in sections" :key="index" :href="section.href" @click="scrollToSection" :data-title="section.title" class="tooltipstered" :class="{
             active: activeLinkId === section.id,
             inactive: activeLinkId !== section.id,
-          }"
-        ></a>
+          }"></a>
       </div>
     </div>
     <div id="contact-menu-button">
       <ContactMenuButton />
     </div>
-    <div id="contact-menu-button">
+    <div id="news">
       <News />
     </div>
-    <div id="contact-menu-button">
+    <div id="partner">
       <Partner />
     </div>
     <div id="partner">
@@ -71,8 +63,8 @@ const sections = ref([
   { title: "Quy định và điều lệ", href: "#term-section", id: "term-section" },
   { title: "Lịch trình & sơ đồ", href: "#event-map", id: "event-map" },
   { title: "Đăng ký", href: "#sign-up", id: "sign-up" },
-  { title: "Tin tức", href: "#tin-tuc", id: "news" },
-  { title: "Đối tác", href: "#doi-tac", id: "partner" },
+  { title: "Tin tức", href: "#news", id: "news" },
+  { title: "Đối tác", href: "#partner", id: "partner" },
 ]);
 
 onMounted(() => {

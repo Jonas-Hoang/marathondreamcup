@@ -15,8 +15,8 @@
                 <span>0<br /><strong>giờ</strong></span><span>0<br /><strong>phút</strong></span><span>0<br /><strong>giây</strong></span>
               </div>
               <span class="text-[400] mt-[15px] text-[22px] mb-[15px]">Đếm ngược tới ngày sự kiện diễn ra với</span>
-              <div class="flex bg-blue-600 items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] px-[30px] mt-[10px]">
-                <span class="my-[15px] text-[40px] font-bold">5.000+</span>
+              <div class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] px-[30px] mt-[10px]">
+                <span class="text-[60px] font-bold">5.000+</span>
               </div>
               <span class="mt-[10px] text-[400] text-[22px]">vận động viên (dự kiến)</span>
             </div>

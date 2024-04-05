@@ -12,10 +12,10 @@
             </div>
             <div class="col medium-5 small-12 large-7" data-aos="fade-left" data-aos-duration="1000">
               <div class="flex flex-col justify-center">
-                <h2 class="font-bold uppercase size italic text-4xl text-start mb-4">
+                <h2 class="font-bold uppercase size italic text-4xl text-start mb-4 text-[#fdb912]">
                   Sải bước chiến thắng cùng
                 </h2>
-                <div class=" flex bg-blue-600 items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%]  mb-6 px-[30px]">
+                <div class=" flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%]  mb-6 px-[30px]">
                   <span class="my-[15px] text-xl font-bold">Running Diamond Cup 2024</span>
                 </div>
                 <span class="font-extralight text-lg mb-6" style="font-size: 110%">
