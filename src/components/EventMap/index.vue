@@ -14,7 +14,7 @@
                 <span>Sơ đồ </span>
                 <span style="color: #2d63f7">Đường chạy</span>
               </h2>
-              <img src="../../../assets/images/roapmap.jpg" data-src="../../../assets/images/roapmap.jpg" alt="so do duong chay" />
+              <img src="../../../assets/images/roadmap.jpg" data-src="../../../assets/images/roadmap.jpg" alt="so do duong chay" />
             </div>
           </div>
         </div>

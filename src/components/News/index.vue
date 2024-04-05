@@ -47,6 +47,11 @@ import news1 from "../../../assets/images/news/news1.jpeg";
 import news2 from "../../../assets/images/news/news2.jpeg";
 import news3 from "../../../assets/images/news/news3.jpeg";
 import news4 from "../../../assets/images/news/news4.jpeg";
+import news5 from "../../../assets/images/news/news5.jpeg";
+import news6 from "../../../assets/images/news/news6.jpeg";
+import news7 from "../../../assets/images/news/news7.jpeg";
+import news8 from "../../../assets/images/news/news8.jpeg";
+import news9 from "../../../assets/images/roadmap.jpg";
 
 let id = 0;
 const slides = [
@@ -83,6 +88,49 @@ const slides = [
       "Hồ Đức Vĩnh tiết lộ ca sĩ Đức Tuấn sẽ góp mặt trong giải marathon do anh tổ chức. Đây là một dự án tâm huyết của nam người mẫu nhằm nâng cao tinh thần rèn luyện thể thao của mọi người.",
     img: news4,
     url: "https://thanhnien.vn/ca-si-duc-tuan-tham-gia-giai-marathon-cung-ho-duc-vinh-185230623101519483.htm",
+  },
+  {
+    id: id++,
+    title:
+      "Marathon Dream Cup 2023 - Reach Your Dream: Tổng giá trị giải thưởng lên đến gần 150 triệu đồng",
+    content:
+      "Diamond Entertainment do siêu mẫu Hồ Đức Vĩnh làm đại diện phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Marathon Dream Cup 2023.",
+    img: news5,
+    url: "https://thethao.sggp.org.vn/marathon-dream-cup-2023-reach-your-dream-tong-gia-tri-giai-thuong-len-den-gan-150-trieu-dong-post694749.html",
+  },
+  {
+    id: id++,
+    title:
+      "Siêu mẫu Hồ Đức Vĩnh và loạt sao Việt tham gia giải chạy gây quỹ thiện nguyện",
+    content:
+      "Mới đây, siêu mẫu Hồ Đức Vĩnh đã phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TP.HCM phát động giải chạy Marathon Dream Cup 2023 vì cộng đồng.",
+    img: news6,
+    url: "https://soha.vn/sieu-mau-ho-duc-vinh-va-loat-sao-viet-tham-gia-giai-chay-gay-quy-thien-nguyen-20230623105225775.htm",
+  },
+  {
+    id: id++,
+    title:
+      "Diamond Entertainment ‘bắt tay’ cùng Hội Liên hiệp Thanh niên Việt Nam tổ chức Marathon Dream Cup 2023 gây quỹ từ thiện",
+    content:
+      "Diamond Entertainment do siêu mẫu Hồ Đức Vĩnh làm đại diện phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Marathon Dream Cup 2023.",
+    img: news7,
+    url: "https://thethaongaynay.com.vn/the-thao/diamond-entertainment-bat-tay-cung-hoi-lien-hiep-thanh-nien-viet-nam-to-chuc-marathon-dream-cup-2023-gay-quy-tu-thien.html",
+  },
+  {
+    id: id++,
+    title: "Siêu mẫu Hồ Đức Vĩnh: ‘Chạy bộ giúp tôi vượt qua những lúc bế tắc’",
+    content:
+      "Nam siêu mẫu tổ chức giải chạy từ thiện có tên “Marathon Dream Cup 2023” để lan tỏa những nguồn năng lượng tích cực từ hoạt động chạy bộ.",
+    img: news8,
+    url: "https://vtcnews.vn/sieu-mau-ho-duc-vinh-chay-bo-giup-toi-vuot-qua-nhung-luc-be-tac-ar801419.html",
+  },
+  {
+    id: id++,
+    title: "Tổ chức giải chạy từ thiện qua cung đường đẹp nhất TPHCM",
+    content:
+      "Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Marathon Dream Cup 2023. Đây là hoạt động nhằm thúc đẩy tinh thần thể dục thể thao rèn luyện thể chất lẫn của cộng đồng với thông điệp “Reach Your Dream – Chinh phục ước mơ”. Thông qua đó, chương trình mong đóng góp quỹ từ thiện cho những mảnh đời khó khăn.",
+    img: news9,
+    url: "https://laodongtre.laodong.vn/the-thao/to-chuc-giai-chay-tu-thien-qua-cung-duong-dep-nhat-tphcm-1207973.ldo",
   },
 ];
 </script>
