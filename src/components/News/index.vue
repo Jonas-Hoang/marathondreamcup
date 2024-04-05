@@ -5,26 +5,13 @@
         <div class="content">
           <div class="row">
             <h1>Tin Tức - Sự Kiện</h1>
-            <Carousel
-              :items-to-show="3"
-              snapAlign="start"
-              :wrap-around="true"
-              :autoplay="5000"
-              :transition="1000"
-            >
-              <Slide v-for="slide in slides" :key="slide.id">
-                <div
-                  class="col"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-offset="200"
-                >
-                  <a :href="slide.url" target="_blank"
-                    ><img :src="slide.img" alt="so do duong chay"
-                  /></a>
-                  <a :href="slide.url" target="_blank"
-                    ><h2>{{ slide.title }}</h2></a
-                  >
+            <Carousel :items-to-show="3" snapAlign="start" :wrap-around="true" :autoplay="5000" :transition="1000">
+              <Slide v-for="slide in slides" :key="slide.id" class="draggable">
+                <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+                  <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag"><img :src="slide.img" alt="so do duong chay" /></div>
+                  <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag">
+                    <h2>{{ slide.title }}</h2>
+                  </div>
                   <p>
                     {{ slide.content }}
                   </p>
@@ -43,6 +30,8 @@
 </template>
 
 <script setup>
+import { ref, onUnmounted } from "vue";
+
 import news1 from "../../../assets/images/news/news1.jpeg";
 import news2 from "../../../assets/images/news/news2.jpeg";
 import news3 from "../../../assets/images/news/news3.jpeg";
@@ -54,6 +43,10 @@ import news8 from "../../../assets/images/news/news8.jpeg";
 import news9 from "../../../assets/images/roadmap.jpg";
 
 let id = 0;
+const hasMoved = ref(false);
+const isDragging = ref(false);
+const dragStartX = ref(0);
+
 const slides = [
   {
     id: id++,
@@ -133,6 +126,32 @@ const slides = [
     url: "https://laodongtre.laodong.vn/the-thao/to-chuc-giai-chay-tu-thien-qua-cung-duong-dep-nhat-tphcm-1207973.ldo",
   },
 ];
+
+const startDrag = (event) => {
+  isDragging.value = false; // Reset to ensure fresh drag action
+  dragStartX.value = event.clientX; // Record the start position of the drag
+};
+
+const whileDragging = (event) => {
+  if (!isDragging.value && Math.abs(event.clientX - dragStartX.value) > 10) {
+    isDragging.value = true;
+  }
+};
+
+const stopDrag = () => {
+  if (isDragging.value) {
+    // Perform actions upon drag end if necessary
+    console.log("Drag ended");
+  }
+  isDragging.value = false;
+};
+
+function handleClick(link) {
+  if (!isDragging.value) {
+    window.open(link, "_blank");
+    isDragging.value = false;
+  }
+}
 </script>
 
 <script>
