@@ -26,7 +26,18 @@
     </div>
     <div id="bullet-menu">
       <div class="scroll-to-bullets hide-for-medium">
-        <a v-for="(section, index) in sections" :key="index" :href="section.href" @click="scrollToSection" :data-title="section.title" class="tooltipstered" :class="{ 'active': activeLinkId === section.id, 'inactive': activeLinkId !== section.id }"></a>
+        <a
+          v-for="(section, index) in sections"
+          :key="index"
+          :href="section.href"
+          @click="scrollToSection"
+          :data-title="section.title"
+          class="tooltipstered"
+          :class="{
+            active: activeLinkId === section.id,
+            inactive: activeLinkId !== section.id,
+          }"
+        ></a>
       </div>
     </div>
     <div id="contact-menu-button">
@@ -34,6 +45,9 @@
     </div>
     <div id="contact-menu-button">
       <News />
+    </div>
+    <div id="contact-menu-button">
+      <Partner />
     </div>
     <div id="partner">
       <Footter />
@@ -100,6 +114,11 @@ const Footter = defineAsyncComponent(() =>
   import("@/components/Footter/index.vue")
 );
 
+const News = defineAsyncComponent(() => import("@/components/News/index.vue"));
+const Partner = defineAsyncComponent(() =>
+  import("@/components/Partner/index.vue")
+);
+
 const checkScroll = () => {
   const elements = document.querySelectorAll("#body > div");
 
@@ -128,10 +147,9 @@ const checkScroll = () => {
 const sectionInView = (sectionTitle) => {
   print(`click vision alo : ${sectionTitle}`);
 };
-const News = defineAsyncComponent(() => import("@/components/News/index.vue"));
 </script>
 
-<style lang="scss" scoped >
+<style lang="scss" scoped>
 .scroll-to-bullets {
   max-height: 100vh;
   position: fixed;
