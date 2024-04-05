@@ -41,7 +41,7 @@
     <div id="partner">
       <Partner />
     </div>
-    <div id="partner">
+    <div class="footer" id="partner">
       <Footter />
     </div>
   </div>

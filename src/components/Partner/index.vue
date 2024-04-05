@@ -5,26 +5,10 @@
         <div class="content">
           <div class="row">
             <h1>Đối tác - Nhà tài trợ</h1>
-            <Carousel
-              :items-to-show="5"
-              snapAlign="start"
-              :wrap-around="true"
-              :autoplay="2000"
-              :transition="1000"
-            >
+            <Carousel v-bind="settings" :breakpoints="breakpoints">
               <Slide v-for="slide in slides" :key="slide.id" class="draggable">
-                <div
-                  class="col"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-offset="200"
-                >
-                  <div
-                    @click.prevent="handleClick(slide.url)"
-                    @mousedown="startDrag"
-                    @mousemove="whileDragging"
-                    @mouseup="stopDrag"
-                  >
+                <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+                  <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag">
                     <img :src="slide.img" alt="so do duong chay" />
                   </div>
                 </div>
@@ -96,6 +80,37 @@ let id = 0;
 const hasMoved = ref(false);
 const isDragging = ref(false);
 const dragStartX = ref(0);
+
+// :items-to-show="5"
+// snapAlign="start"
+// :wrap-around="true"
+// :autoplay="2000"
+// :transition="1000"
+const settings = ref({
+  itemsToShow: 5,
+  snapAlign: "start",
+  wrapAround: true,
+  autoplay: 2000,
+  transition: 1000,
+});
+
+const breakpoints = ref({
+  // 700px and up
+  400: {
+    itemsToShow: 1,
+    snapAlign: "start",
+  },
+  // 700px and up
+  700: {
+    itemsToShow: 3,
+    snapAlign: "start",
+  },
+  // 1024 and up
+  1024: {
+    itemsToShow: 5,
+    snapAlign: "start",
+  },
+});
 
 const slides = [
   {
