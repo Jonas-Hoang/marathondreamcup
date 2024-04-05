@@ -8,7 +8,7 @@
         <div class="section-content relative">
           <div class="row align-middle">
             <div class="col medium-5 small-12 large-5 " data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
-              <img width="1138" height="1894" src="https://marathondreamcup.vn/wp-content/uploads/2023/07/hang-muc-chinh-F_standee-0m8x1m8-scaled-e1690425687244.jpg" data-src="https://marathondreamcup.vn/wp-content/uploads/2023/07/hang-muc-chinh-F_standee-0m8x1m8-scaled-e1690425687244.jpg" alt="adtervise-image" />
+              <img width="1138" height="1894" src="../../../assets/images/running-banner.jpeg" data-src="../../../assets/images/running-banner.jpeg" alt="adtervise-image" />
             </div>
             <div class="col medium-5 small-12 large-7" data-aos="fade-left" data-aos-duration="1000">
               <div class="flex flex-col justify-center">
