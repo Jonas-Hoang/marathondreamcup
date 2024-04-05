@@ -10,7 +10,7 @@
                 <h4>Đơn vị tổ chức</h4>
               </div>
               <div class="img has-hover x md-x lg-x y md-y lg-y w-[53%]">
-                <div class="img-inner dark"><img width="701" height="450" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/logo-de-final_2-2-1.png" data-src="https://marathondreamcup.vn/wp-content/uploads/2023/06/logo-de-final_2-2-1.png" class="attachment-original size-original lazy-load-active" alt="" decoding="async" srcset="https://marathondreamcup.vn/wp-content/uploads/2023/06/logo-de-final_2-2-1.png 701w, https://marathondreamcup.vn/wp-content/uploads/2023/06/logo-de-final_2-2-1-300x193.png 300w" data-srcset="https://marathondreamcup.vn/wp-content/uploads/2023/06/logo-de-final_2-2-1.png 701w, https://marathondreamcup.vn/wp-content/uploads/2023/06/logo-de-final_2-2-1-300x193.png 300w" sizes="(max-width: 701px) 100vw, 701px"></div>
+                <div class="img-inner dark"><img width="701" height="450" src="../../../assets/images/logo_DN_DiamondNetwork.png" data-src="../../../assets/images/logo_DN_DiamondNetwork.png" class="attachment-original size-original lazy-load-active" alt="logo_doanh-nghiep" decoding="async" srcset="../../../assets/images/logo_DN_DiamondNetwork.png"></div>
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@
             <div class="col-inner">
               <h4>Bảo trợ truyền thông</h4>
               <div class="img has-hover x md-x lg-x y md-y lg-y">
-                <div class="img-inner dark"><img width="1020" height="517" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/bao-tro-truyen-thong.png" data-src="https://marathondreamcup.vn/wp-content/uploads/2023/06/bao-tro-truyen-thong.png" class="attachment-large size-large lazy-load-active" alt="" decoding="async" srcset="https://marathondreamcup.vn/wp-content/uploads/2023/06/bao-tro-truyen-thong.png 1024w, https://marathondreamcup.vn/wp-content/uploads/2023/06/bao-tro-truyen-thong-300x152.png 300w, https://marathondreamcup.vn/wp-content/uploads/2023/06/bao-tro-truyen-thong-768x389.png 768w" data-srcset="https://marathondreamcup.vn/wp-content/uploads/2023/06/bao-tro-truyen-thong.png 1024w, https://marathondreamcup.vn/wp-content/uploads/2023/06/bao-tro-truyen-thong-300x152.png 300w, https://marathondreamcup.vn/wp-content/uploads/2023/06/bao-tro-truyen-thong-768x389.png 768w" sizes="(max-width: 1020px) 100vw, 1020px"></div>
+                <div class="img-inner dark"><img width="1020" height="517" src="../../../assets/images/bao-tro-truyen-thong.png" data-src="../../../assets/images/bao-tro-truyen-thong.png" data-srcset="../../../assets/images/bao-tro-truyen-thong.png"></div>
               </div>
             </div>
           </div>
