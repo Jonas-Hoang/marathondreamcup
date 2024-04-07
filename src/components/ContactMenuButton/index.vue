@@ -7,7 +7,7 @@
         <div class="phone-vr">
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#1877f2]">
-            <a target="_blank" href="https://www.facebook.com/groups/586173493503073">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61558016510583">
               <img src="../../../assets/images/facebook-logo.png" alt="facbook-logo">
             </a>
           </div>

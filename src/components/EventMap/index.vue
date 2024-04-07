@@ -4,17 +4,31 @@
       <div class="section-bg-overlay absolute fill">
         <div class="content">
           <div class="row">
-            <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+            <div
+              class="col"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+            >
               <h2>Chương trình</h2>
-              <img src="../../../assets/images/lich_trinh.jpeg" alt="lich trinh su kien" />
+              <img
+                src="../../../assets/images/lich_trinh.jpeg"
+                alt="lich trinh su kien"
+              />
             </div>
             <div class="devider"></div>
-            <div class="col" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
-              <h2>
-                <span>Sơ đồ </span>
-                <span style="color: #2d63f7">Đường chạy</span>
-              </h2>
-              <img src="../../../assets/images/roadmap.jpg" data-src="../../../assets/images/roadmap.jpg" alt="so do duong chay" />
+            <div
+              class="col"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+            >
+              <h2>Sơ đồ Đường chạy</h2>
+              <img
+                src="../../../assets/images/roadmap.jpg"
+                data-src="../../../assets/images/roadmap.jpg"
+                alt="so do duong chay"
+              />
             </div>
           </div>
         </div>

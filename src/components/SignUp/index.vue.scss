@@ -42,8 +42,7 @@
   }
 
   .hightlight-text {
-    color: #000;
-    background-color: rgb(230, 195, 125);
+    color: #fff;
   }
 
   button {
@@ -62,5 +61,31 @@
   }
   .button-content {
     padding: 10px 30px;
+  }
+
+  @media (min-width: 100px) {
+    p {
+      font-size: 100%;
+    }
+  }
+  @media (min-width: 300px) {
+    p {
+      font-size: 120%;
+    }
+  }
+  @media (min-width: 500px) {
+    p {
+      font-size: 130%;
+    }
+  }
+  @media (min-width: 600px) {
+    p {
+      font-size: 150%;
+    }
+  }
+  @media (min-width: 900px) {
+    p {
+      font-size: 170%;
+    }
   }
 }
