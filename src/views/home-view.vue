@@ -8,7 +8,7 @@
           </svg>
         </button>
       </div>
-      <div class=" relative flex justify-between lg:w-auto  pr-4 lg:static lg:block lg:justify-start">
+      <div class="logo_main relative flex justify-between lg:w-auto  pr-4 lg:static lg:block lg:justify-start">
         <a href="/" @click="scrollTo"><img src="../../assets/images/logo_RDC2024.png" alt="logo" class="h-[60px]" /></a>
       </div>
       <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">

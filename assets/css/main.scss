@@ -1,10 +1,13 @@
 #app {
-    @media (max-width: 560px) {
-        overflow-x: hidden;
-    }
     color: #f1f1f1;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.logo_main {
+    @media (max-width: 1023px) {
+        padding-right: 0;
+    }
 }

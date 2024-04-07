@@ -35,10 +35,7 @@
     </div>
     <div id="bullet-menu">
       <div class="scroll-to-bullets hide-for-medium">
-        <a v-for="(section, index) in sections" :key="index" :href="section.href" @click="scrollToSection" :data-title="section.title" class="tooltipstered" :class="{
-            active: activeLinkId === section.id,
-            inactive: activeLinkId !== section.id,
-          }"></a>
+        <a v-for="(section, index) in sections" :key="index" :href="section.href" @click.prevent="scrollToSection(section)" :data-title="section.title" class="tooltipstered" :class="{active: activeLinkId === section.id,inactive: activeLinkId !== section.id,}"></a>
       </div>
     </div>
     <div id="contact-menu-button">
