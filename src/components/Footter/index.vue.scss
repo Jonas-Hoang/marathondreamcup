@@ -63,5 +63,10 @@
         margin-right: auto;
         position: relative;
         width: 100%;
+        .founder {
+            @media (max-width: 1153px) {
+                margin-left: 10px;
+            }
+        }
     }
 }

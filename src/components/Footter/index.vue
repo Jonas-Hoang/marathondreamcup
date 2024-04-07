@@ -1,12 +1,12 @@
 <template>
   <div id="footer">
-    <div class="advertise-section text-[#f1f1f1] relative py-[60px]">
+    <div class="footer text-[#f1f1f1] relative py-[60px]">
       <div class="bg section-bg section-bg-overlay fill bg-fill bg-loaded"></div>
       <div class="section-content relative">
-        <div class="row" id="row-1367639483">
+        <div class="row flex" id="row-1367639483">
           <div class="col medium-4 small-12 flex-basis-1/3 max-w-[33.3333333%]">
             <div class="col-inner">
-              <div class="text ml-[40px]">
+              <div class="founder text ml-[40px]">
                 <h4>Đơn vị tổ chức</h4>
               </div>
               <div class="img has-hover x md-x lg-x y md-y lg-y w-[53%]">
