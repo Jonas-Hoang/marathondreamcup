@@ -6,7 +6,7 @@
     <div id="advertise-section">
       <AdvertiseSection />
     </div>
-    <div id="term-section">
+    <div id="purpose-section">
       <PurposeJoin />
     </div>
     <div id="term-section">
@@ -26,10 +26,18 @@
     </div>
     <div id="bullet-menu">
       <div class="scroll-to-bullets hide-for-medium">
-        <a v-for="(section, index) in sections" :key="index" :href="section.href" @click="scrollToSection" :data-title="section.title" class="tooltipstered" :class="{
+        <a
+          v-for="(section, index) in sections"
+          :key="index"
+          :href="section.href"
+          @click="scrollToSection"
+          :data-title="section.title"
+          class="tooltipstered"
+          :class="{
             active: activeLinkId === section.id,
             inactive: activeLinkId !== section.id,
-          }"></a>
+          }"
+        ></a>
       </div>
     </div>
     <div id="contact-menu-button">
