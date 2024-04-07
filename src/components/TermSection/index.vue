@@ -1,7 +1,7 @@
 <template>
   <div id="term-section">
-    <div class="advertise-section text-[#f1f1f1] relative">
-      <section class="pt-[65px]">
+    <div class="term-section text-[#f1f1f1] relative">
+      <section class="section pt-[65px]">
         <div class="bg section-bg fill bg-fill bg-loaded">
           <div class="section-bg-overlay absolute fill"></div>
         </div>

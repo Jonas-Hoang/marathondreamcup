@@ -21,6 +21,15 @@
     top: 0;
 }
 
+.section {
+    @media (max-width: 1200px) {
+        padding-bottom: 30px;
+    }
+    @media (max-width: 849px) {
+        padding-bottom: 0;
+    }
+}
+
 .section-content {
     position: relative !important;
     .row {

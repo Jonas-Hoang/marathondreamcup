@@ -3,7 +3,7 @@
     <div id="video-youtube">
       <BannerVid />
     </div>
-    <div id="advertise-section">
+    <div id="about">
       <AdvertiseSection />
     </div>
     <div id="term-section">
@@ -24,17 +24,6 @@
     <div id="sign-up">
       <PrizeSection />
     </div>
-    <div id="bullet-menu">
-      <div class="scroll-to-bullets hide-for-medium">
-        <a v-for="(section, index) in sections" :key="index" :href="section.href" @click="scrollToSection" :data-title="section.title" class="tooltipstered" :class="{
-            active: activeLinkId === section.id,
-            inactive: activeLinkId !== section.id,
-          }"></a>
-      </div>
-    </div>
-    <div id="contact-menu-button">
-      <ContactMenuButton />
-    </div>
     <div id="news">
       <News />
     </div>
@@ -44,22 +33,32 @@
     <div class="footer" id="partner">
       <Footter />
     </div>
+    <div id="bullet-menu">
+      <div class="scroll-to-bullets hide-for-medium">
+        <a v-for="(section, index) in sections" :key="index" :href="section.href" @click.prevent="scrollToSection(section)" :data-title="section.title" class="tooltipstered" :class="{
+            active: activeLinkId === section.id,
+            inactive: activeLinkId !== section.id,
+          }"></a>
+      </div>
+    </div>
+    <div id="contact-menu-button">
+      <ContactMenuButton />
+    </div>
   </div>
 </template>
 
 <script setup>
 import { onMounted, onUnmounted, ref, defineAsyncComponent } from "vue";
 import { ElTooltip } from "element-plus";
+import router from "@/router";
 
 const loggedElements = new Set();
 const activeLinkId = ref("");
+const selectedLink = ref("");
+const selectedRouter = ref("");
 
 const sections = ref([
-  {
-    title: "Thông tin chung",
-    href: "#advertise-section",
-    id: "advertise-section",
-  },
+  { title: "Thông tin chung", href: "#about", id: "about" },
   { title: "Quy định và điều lệ", href: "#term-section", id: "term-section" },
   { title: "Lịch trình & sơ đồ", href: "#event-map", id: "event-map" },
   { title: "Đăng ký", href: "#sign-up", id: "sign-up" },
@@ -134,6 +133,31 @@ const checkScroll = () => {
       loggedElements.delete(element.id);
     }
   });
+};
+
+const scrollToSection = (link) => {
+  // Assuming link.href is an ID selector (e.g., "#about")
+  const sectionId = link.href.substring(1); // Remove the '#' from the href
+  const sectionElement = document.getElementById(sectionId);
+  if (sectionElement) {
+    const topPosition =
+      sectionElement.getBoundingClientRect().top + window.pageYOffset - 84;
+    window.scrollTo({
+      top: topPosition,
+      behavior: "smooth",
+    });
+  }
+  if (
+    router.currentRoute.value.path === "/tim-anh" ||
+    router.currentRoute.value.path === "/ket-qua"
+  ) {
+    selectedLink.value = link.text;
+    selectedRouter.value = "";
+    router.replace({ path: "/" + router.replace({ path: "/home" }) + "" });
+  } else {
+    selectedLink.value = link.text;
+    selectedRouter.value = "";
+  }
 };
 
 const sectionInView = (sectionTitle) => {

@@ -1,82 +1,72 @@
 .section-bg {
-  background-image: url(../../../assets/images/map-section-bgr.jpg);
-  width: 100%;
-  height: 720px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  opacity: 1;
-
-  .fill {
-    height: 100%;
-    left: 0;
-    margin: 0 !important;
-    padding: 0 !important;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .section-bg-overlay {
-    background-color: rgba(255, 255, 255, 0.866);
-  }
-
-  .content {
-    height: 100%;
-  }
-
-  .row {
-    height: 100%;
-    max-width: 1172px;
-    margin: 0px auto;
-    padding: 5% 0;
-  }
-  .devider {
-    height: 100%;
-    width: 5%;
-    float: left;
-  }
-  .col {
-    height: 100%;
-    width: 47.5%;
-    float: left;
-  }
-
-  .col h2 {
-    color: #000;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 150%;
-    margin-bottom: 20px;
-  }
-  .col img {
-    // height: 100%;
-    border: 4px solid #2d63f7;
-    border-radius: 20px;
-    transition: 0.3s;
-  }
-
-  .col img:hover,
-  .col img:active {
-    scale: 1.03;
-  }
-
-  @media only screen and (max-width: 550px) {
+    background-image: url(../../../assets/images/map-section-bgr.jpg);
+    width: 100%;
+    height: 720px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    .fill {
+        height: 100%;
+        left: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .section-bg-overlay {
+        background-color: rgba(255, 255, 255, 0.866);
+    }
+    .content {
+        height: 100%;
+    }
+    .row {
+        height: 100%;
+        max-width: 1172px;
+        margin: 0px auto;
+        padding: 3% 0;
+    }
     .devider {
-      width: 100%;
-      height: 10%;
+        height: 100%;
+        width: 5%;
+        float: left;
     }
-
     .col {
-      width: 90%;
-      height: 40%;
-      margin-left: 5%;
+        height: 100%;
+        width: 47.5%;
+        float: left;
     }
-
+    .col h2 {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 150%;
+        margin-bottom: 20px;
+    }
     .col img {
-      height: 100%;
+        // height: 100%;
+        border: 4px solid #2d63f7;
+        border-radius: 20px;
+        transition: 0.3s;
     }
-
-    height: 1000px;
-  }
+    .col img:hover,
+    .col img:active {
+        scale: 1.03;
+    }
+    @media only screen and (max-width: 550px) {
+        .devider {
+            width: 100%;
+            height: 10%;
+        }
+        .col {
+            width: 90%;
+            height: 40%;
+            margin-left: 5%;
+        }
+        .col img {
+            height: 100%;
+        }
+        height: 1000px;
+    }
 }
