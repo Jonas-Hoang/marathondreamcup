@@ -90,19 +90,24 @@ const settings = ref({
   itemsToShow: 5,
   snapAlign: "start",
   wrapAround: true,
-  autoplay: 2000,
+  autoplay: 5000,
   transition: 1000,
 });
 
 const breakpoints = ref({
-  // 700px and up
-  400: {
-    itemsToShow: 1,
+  // 300px and up
+  300: {
+    itemsToShow: 2,
     snapAlign: "start",
   },
-  // 700px and up
-  700: {
+  // 600px and up
+  600: {
     itemsToShow: 3,
+    snapAlign: "start",
+  },
+  // 800px and up
+  800: {
+    itemsToShow: 4,
     snapAlign: "start",
   },
   // 1024 and up

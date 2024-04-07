@@ -13,12 +13,12 @@
             <div class="col medium-5 small-12 large-6" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
               <div class="flex flex-col justify-center">
                 <h3 style="text-align: center">
-                  <span style="font-size: 120%">Vé sớm</span>
+                  <span>Vé sớm</span>
                 </h3>
                 <h6 style="text-align: center">
-                  <span style="font-size: 120%">(đến ngày 30/06/2023)</span>
+                  <span>(đến ngày 30/06/2023)</span>
                 </h6>
-                <div class="row row-small" id="row-1548907457">
+                <div class="row row-small flex mb-[7px]">
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
                       <img width="1920" height="1080" src="../../../assets/images/ticket200.png" alt="ticket200" />
@@ -33,12 +33,12 @@
               </div>
               <div class="flex flex-col justify-center">
                 <h3 style="text-align: center">
-                  <span style="font-size: 120%">Vé thường</span>
+                  <span>Vé thường</span>
                 </h3>
                 <h6 style="text-align: center">
-                  <span style="font-size: 120%">(01/07/2023 – 20/07/2023)</span>
+                  <span>(01/07/2023 – 20/07/2023)</span>
                 </h6>
-                <div class="row row-small" id="row-1548907457">
+                <div class="row row-small flex">
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
                       <img width="1920" height="1080" src="../../../assets/images/ticket250.png" alt="ticket250" />

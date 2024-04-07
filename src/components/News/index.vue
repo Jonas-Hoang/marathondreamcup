@@ -5,7 +5,7 @@
         <div class="content">
           <div class="row">
             <h1 class="!text-[#2d63f7]">Tin Tức - Sự Kiện</h1>
-            <Carousel :items-to-show="3" snapAlign="start" :wrap-around="true" :autoplay="100000" :transition="1000">
+            <Carousel v-bind="settings" :breakpoints="breakpoints">
               <Slide v-for="slide in slides" :key="slide.id" class="draggable">
                 <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
                   <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag"><img :src="slide.img" alt="so do duong chay" /></div>
@@ -46,6 +46,32 @@ let id = 0;
 const hasMoved = ref(false);
 const isDragging = ref(false);
 const dragStartX = ref(0);
+
+const settings = ref({
+  itemsToShow: 3,
+  snapAlign: "start",
+  wrapAround: true,
+  autoplay: 5000,
+  transition: 1000,
+});
+
+const breakpoints = ref({
+  // 300px and up
+  300: {
+    itemsToShow: 1,
+    snapAlign: "start",
+  },
+  // 600px and up
+  600: {
+    itemsToShow: 2,
+    snapAlign: "start",
+  },
+  // 1024 and up
+  1024: {
+    itemsToShow: 3,
+    snapAlign: "start",
+  },
+});
 
 const slides = [
   {

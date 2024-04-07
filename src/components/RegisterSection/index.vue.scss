@@ -56,6 +56,9 @@ button {
     font-weight: 700;
     width: 37%;
     margin-top: 30px;
+    @media (max-width: 960px) {
+        width: 47%;
+    }
 }
 
 button:hover,
@@ -74,6 +77,16 @@ button:active {
     flex-direction: column;
     margin: 0;
     padding: 0 15px 30px;
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    h6 {
+        font-family: "Readex Pro", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 5px
+    }
     img:hover {
         scale: 1.03;
         transition: 0.3s;

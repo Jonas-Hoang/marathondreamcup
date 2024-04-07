@@ -1,6 +1,13 @@
 <template>
   <nav class="flex flex-wrap items-center justify-between px-2 py-3 bg-[#3055A6] text-gray-100 sticky top-0 z-50">
     <div class="w-[100%] px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div>
+        <button @click=" isMobileMenuOpen=!isMobileMenuOpen" class="lg:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
       <div class=" relative flex justify-between lg:w-auto  pr-4 lg:static lg:block lg:justify-start">
         <a href="/" @click="scrollTo"><img src="../../assets/images/logo_RDC2024.png" alt="logo" class="h-[60px]" /></a>
       </div>
@@ -24,9 +31,26 @@
         </button>
       </div>
       <!-- Mobile Menu -->
-      <div v-if="isMobileMenuOpen" class="lg:hidden">
-        <div class="container mx-auto p-4 flex flex-col">
-          <!-- Add mobile menu content here -->
+      <div v-if="isMobileMenuOpen" class="fixed inset-0 lg:hidden bg-black text-white">
+        <div class="p-5">
+          <!-- Close (X) Icon -->
+          <button @click="isMobileMenuOpen = false" class="mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+
+          <!-- Sidebar Links -->
+          <nav>
+            <template v-for="link in links" :key="link.text">
+              <router-link v-if="link.type === 'router-link'" :to="{ name: link.name }" class="block mt-3" @click="isMobileMenuOpen = !isMobileMenuOpen">
+                {{ link.text }}
+              </router-link>
+              <a v-else :href="link.href" class="block mt-3" @click="isMobileMenuOpen = !isMobileMenuOpen">
+                {{ link.text }}
+              </a>
+            </template>
+          </nav>
         </div>
       </div>
     </div>
