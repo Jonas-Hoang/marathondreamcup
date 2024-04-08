@@ -11,3 +11,8 @@ html {
         padding-right: 0;
     }
 }
+
+.body-no-scroll {
+    overflow: hidden;
+    height: 100%;
+}

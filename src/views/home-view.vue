@@ -30,7 +30,7 @@
       </div>
       <!-- Mobile Menu -->
       <div v-if="isMobileMenuOpen" class="fixed inset-0 lg:hidden bg-black text-white" style="background-color: rgba(0, 0, 0, .5);">
-        <div class="w-1/2 h-full bg-black" data-aos="fade-right" data-aos-duration="400" data-aos-delay='0'>
+        <div class="w-2/3 h-full bg-black" data-aos="fade-right" data-aos-duration="400" data-aos-delay='0'>
           <nav class="menu-sidebar pt-[25px]">
             <template v-for="link in links" :key="link.text">
               <router-link v-if="link.type === 'router-link'" :to="{ name: link.name }" class="block text-[13px] font-[500] py-[15px] pl-[20px]" @click="isMobileMenuOpen = !isMobileMenuOpen">
@@ -93,7 +93,7 @@ export default {
     };
 
     const closeMenu = () => {
-      isMobileMenuOpen.value = false;
+      if (isMobileMenuOpen.value === true) isMobileMenuOpen.value = false;
     };
 
     const scrollToSection = (link) => {
@@ -126,6 +126,7 @@ export default {
       links,
       selectedLink,
       selectedRouter,
+      closeMenu,
       selectLink,
       selectRouter,
       scrollTop,
