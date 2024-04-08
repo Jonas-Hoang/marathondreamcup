@@ -158,6 +158,11 @@ const sectionInView = (sectionTitle) => {};
 </script>
 
 <style lang="scss" scoped>
+#bullet-menu {
+  @media (max-width: 550px) {
+    display: none;
+  }
+}
 .scroll-to-bullets {
   max-height: 100vh;
   position: fixed;
@@ -175,6 +180,9 @@ const sectionInView = (sectionTitle) => {};
     margin: 10px 15px;
     transition: all 0.3s;
     width: 15px;
+    @media (max-width: 1024px) {
+      margin: 10px;
+    }
     &:hover,
     &.active {
       background-color: #fff;
