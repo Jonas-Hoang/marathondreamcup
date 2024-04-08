@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#1D1D1D] w-auto section-content py-[60px] relative" id="purpose">
-    <div class="flex items-center flex-col ">
+    <div v-if="$isMobile() == true || $isMobile() == false" class="flex items-center flex-col ">
       <div class="col ml-auto mr-0">
         <h2 class="mb-[30px] italic text-[#f1f1f1] text-[36px] font-[600]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay='500'>
           <span>MỤC ĐÍCH <br /><span style="color: #d6b571">RUNNING DIAMOND CUP</span></span>
@@ -14,7 +14,7 @@
               </li>
             </ul>
           </div>
-          <div v-if="!this.$isMobile()" class="rounded-[15px]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500'>
+          <div v-if="!$isMobile()" class="rounded-[15px]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500'>
             <Carousel :modelValue="currentSlideIndex" @update:modelValue="handleSlideChange" @init="handleInit" @slide-start="handleSlideStart" :items-to-show="1" snapAlign="center" :wrap-around="false" :autoplay="7000" :transition="1000">
               <Slide v-for="link in links" :key="link.id" class="draggable">
                 <div class="rounded-[15px]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500'>
@@ -23,7 +23,7 @@
               </Slide>
             </Carousel>
           </div>
-          <div v-if="this.$isMobile()" class="rounded-[15px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay='500'>
+          <div v-if="$isMobile()" class="rounded-[15px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay='500'>
             <Carousel :modelValue="currentSlideIndex" @update:modelValue="handleSlideChange" @init="handleInit" @slide-start="handleSlideStart" :items-to-show="1" snapAlign="center" :wrap-around="false" :autoplay="7000" :transition="1000">
               <Slide v-for="link in links" :key="link.id" class="draggable">
                 <div class="rounded-[15px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay='500'>
@@ -110,7 +110,7 @@ const handleSlideChange = (newIndex) => {
 };
 
 const handleInit = () => {
-  console.log("created");
+  // console.log("created");
 };
 
 const handleSlideStart = (data) => {

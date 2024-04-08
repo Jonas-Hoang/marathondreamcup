@@ -10,7 +10,7 @@
             <div class="col medium-5 small-12 large-5 " data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
               <img width="1138" height="1894" src="../../../assets/images/running-banner.jpeg" data-src="../../../assets/images/running-banner.jpeg" alt="adtervise-image" />
             </div>
-            <div v-if="!this.$isMobile()" class="col medium-5 small-12 large-7" data-aos="fade-left" data-aos-duration="1000">
+            <div v-if="!$isMobile()" class="col medium-5 small-12 large-7" data-aos="fade-left" data-aos-duration="1000">
               <div class="flex flex-col justify-center">
                 <h2 class="font-bold uppercase size italic text-4xl text-start mb-4 text-[#fdb912]">
                   Sải bước chiến thắng cùng
@@ -32,7 +32,7 @@
                 </span>
               </div>
             </div>
-            <div v-if="this.$isMobile()" class="col medium-5 small-12 large-7" data-aos="fade-up" data-aos-duration="1000">
+            <div v-if="$isMobile()" class="col medium-5 small-12 large-7" data-aos="fade-up" data-aos-duration="1000">
               <div class="flex flex-col justify-center">
                 <h2 class="font-bold uppercase size italic text-4xl text-start mb-4 text-[#fdb912]">
                   Sải bước chiến thắng cùng
