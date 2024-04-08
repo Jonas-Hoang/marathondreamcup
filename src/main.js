@@ -7,12 +7,12 @@ import "aos/dist/aos.css";
 
 const app = createApp(App);
 
+app.use(router).mount("#app");
+
 app.config.globalProperties.$isMobile = () => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
     );
 };
-
-app.use(router).mount("#app");
 
 AOS.init();
