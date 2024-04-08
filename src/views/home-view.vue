@@ -24,33 +24,30 @@
         </nav>
       </div>
       <div>
-        <button @click=" isMobileMenuOpen=!isMobileMenuOpen" class="lg:hidden">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-          </svg>
-        </button>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <!-- <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> -->
+        </svg>
       </div>
       <!-- Mobile Menu -->
       <div v-if="isMobileMenuOpen" class="fixed inset-0 lg:hidden bg-black text-white" style="background-color: rgba(0, 0, 0, .5);">
-        <div class="w-1/2 h-full bg-black p-5">
-          <!-- Close (X) Icon -->
-          <button @click="isMobileMenuOpen = false" class="mb-5">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-
-          <nav>
+        <div class="w-1/2 h-full bg-black" data-aos="fade-right" data-aos-duration="400" data-aos-delay='0'>
+          <nav class="menu-sidebar pt-[25px]">
             <template v-for="link in links" :key="link.text">
-              <router-link v-if="link.type === 'router-link'" :to="{ name: link.name }" class="block mt-3" @click="isMobileMenuOpen = !isMobileMenuOpen">
+              <router-link v-if="link.type === 'router-link'" :to="{ name: link.name }" class="block text-[13px] font-[500] py-[15px] pl-[20px]" @click="isMobileMenuOpen = !isMobileMenuOpen">
                 {{ link.text }}
               </router-link>
-              <a v-else :href="link.href" class="block mt-3" @click="isMobileMenuOpen = !isMobileMenuOpen" @click.prevent="scrollToSection(link)">
+              <a v-else :href="link.href" class="block text-[13px] font-[500] py-[15px] pl-[20px]" @click="isMobileMenuOpen = !isMobileMenuOpen" @click.prevent="scrollToSection(link)">
                 {{ link.text }}
               </a>
             </template>
           </nav>
         </div>
+        <!-- Close (X) Icon -->
+        <button @click="isMobileMenuOpen = false" class="mb-5 absolute right-[10px] top-[10px]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
       </div>
     </div>
   </nav>
@@ -95,6 +92,10 @@ export default {
       window.scrollTo({ top: 80, behavior: "smooth" });
     };
 
+    const closeMenu = () => {
+      isMobileMenuOpen.value = false;
+    };
+
     const scrollToSection = (link) => {
       // Assuming link.href is an ID selector (e.g., "#about")
       const sectionId = link.href.substring(1); // Remove the '#' from the href
@@ -113,7 +114,7 @@ export default {
       ) {
         selectedLink.value = link.text;
         selectedRouter.value = "";
-        router.replace({ path: "/" + router.replace({ path: "/home" }) + "" });
+        router.replace({ path: "/" + router.replace({ path: "/" }) + "" });
       } else {
         selectedLink.value = link.text;
         selectedRouter.value = "";
@@ -136,3 +137,12 @@ export default {
 
 
 <style lang="scss" scoped src="../../assets/css/main.scss"></style>
+
+<style lang="scss" scoped>
+.menu-sidebar {
+  a {
+    border-bottom: 1px #3b3a3a solid;
+    color: hsla(0, 0%, 100%, 0.8);
+  }
+}
+</style>

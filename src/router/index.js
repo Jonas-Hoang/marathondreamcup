@@ -19,6 +19,12 @@ const routes = [{
             import ("@/views/result-running.vue"),
     },
     {
+        path: "/tim-kiem",
+        name: "SearchSection",
+        component: () =>
+            import ("@/views/search-section.vue"),
+    },
+    {
         path: "/:pathMatch(.*)*",
         redirect: "/",
     },
@@ -30,7 +36,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-    console.log(`Navigating to: ${to.name}`);
+    // console.log(`Navigating to: ${to.name}`);
     next();
 });
 

@@ -118,9 +118,6 @@ const checkScroll = () => {
     if (isVisible) {
       if (!loggedElements.has(element.id)) {
         activeLinkId.value = element.id;
-        console.log(`topppp is ${rect.top}`);
-        console.log(`window innerHeight is ${window.innerHeight}`);
-        console.log(`bottom is ${rect.bottom}`);
         if (index + 1 < elements.length) {
           const nextElement = elements[index + 1];
         }
@@ -157,9 +154,7 @@ const scrollToSection = (link) => {
   }
 };
 
-const sectionInView = (sectionTitle) => {
-  print(`click vision alo : ${sectionTitle}`);
-};
+const sectionInView = (sectionTitle) => {};
 </script>
 
 <style lang="scss" scoped>
@@ -169,7 +164,7 @@ const sectionInView = (sectionTitle) => {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 999;
+  z-index: 10;
   a {
     border: 3px solid transparent;
     border-radius: 30px;

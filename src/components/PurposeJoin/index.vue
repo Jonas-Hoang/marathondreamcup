@@ -15,7 +15,13 @@
             </ul>
           </div>
           <div class="rounded-[15px]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500'>
-            <img class="rounded-[15px]" :src="activeLink.imageUrl" :alt="activeLink.title" ref="image" />
+            <Carousel :modelValue="currentSlideIndex" @update:modelValue="handleSlideChange" @init="handleInit" @slide-start="handleSlideStart" :items-to-show="1" snapAlign="center" :wrap-around="false" :autoplay="7000" :transition="1000">
+              <Slide v-for="link in links" :key="link.id" class="draggable">
+                <div class="rounded-[15px]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500'>
+                  <img :src="link.imageUrl" alt="so do duong chay" />
+                </div>
+              </Slide>
+            </Carousel>
           </div>
         </div>
       </div>
@@ -34,7 +40,10 @@ export default {
 </script>
 
 <script setup>
+import "vue3-carousel/dist/carousel.css";
 import { ref } from "vue";
+import { Carousel, Slide } from "vue3-carousel";
+
 import picture1 from "../../../assets/images/picture1.jpeg";
 import picture2 from "../../../assets/images/picture2.jpg";
 import picture3 from "../../../assets/images/picture3.jpeg";
@@ -42,6 +51,7 @@ import picture4 from "../../../assets/images/picture4.jpeg";
 
 let id = 0;
 const activeLinkId = ref(null);
+const currentSlideIndex = ref(0);
 
 const links = ref([
   {
@@ -74,13 +84,29 @@ const links = ref([
   },
 ]);
 
+const activeLink = ref(links.value[0]);
+
 const setActiveLink = (id) => {
-  const link = links.value.find((link) => link.id === id);
-  activeLinkId.value = id;
-  activeLink.value = link; // Set the active link
+  const linkIndex = links.value.findIndex((link) => link.id === id);
+  if (linkIndex !== -1) {
+    currentSlideIndex.value = linkIndex;
+    activeLinkId.value = id;
+    activeLink.value = links.value[linkIndex];
+  }
 };
 
-const activeLink = ref(links.value[0]);
+const handleSlideChange = (newIndex) => {
+  currentSlideIndex.value = newIndex;
+  setActiveLink(links.value[newIndex].id);
+};
+
+const handleInit = () => {
+  console.log("created");
+};
+
+const handleSlideStart = (data) => {
+  activeLinkId.value = data.slidingToIndex;
+};
 
 setActiveLink(0);
 </script>
