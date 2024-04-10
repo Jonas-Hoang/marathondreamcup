@@ -1,5 +1,8 @@
 # marathondreamcup
 
+![image](https://github.com/Jonas-Hoang/marathondreamcup/assets/66858257/c544259b-51e5-46ba-88df-e4b3b3b030c7)
+
+
 ## Project setup
 ```
 npm install
