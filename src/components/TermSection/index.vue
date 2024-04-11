@@ -8,11 +8,12 @@
         <div class="section-content relative">
           <div class="row align-middle">
             <div class="col medium-5 small-12 large-7" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="200">
-              <h2 class="font-bold uppercase size italic text-4xl text-start mb-4">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
+              <h2 v-if="!$isMobile()" class="font-bold uppercase size italic text-4xl text-start mb-4">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
+              <h2 v-if="$isMobile()" class="font-bold uppercase size italic text-4xl text-center mb-4">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
               <p class="text-[19px] font-[300]">Running Diamond Cup 2024</p>
               <a class="button bg-[#ddc180] my-[20px] text-black px-[1.2em] max-w-[100%] text-[1.12em]" rel="noopener noreferrer" href="https://drive.google.com/file/d/1JgNWajG0Ic7oPdpE4PSE_zCyfR0LZixx/view?usp=sharing" target="_blank" style="border-radius: 99px"><span>Đọc kỹ điều khoản &amp; điều kiện</span><i class="icon-angle-right" aria-hidden="true"></i></a>
-              <div id="timer-1036666101" class="ux-timer">
-                <span>0<br /><strong>giờ</strong></span><span>0<br /><strong>phút</strong></span><span>0<br /><strong>giây</strong></span>
+              <div class="ux-timer">
+                <span>{{totalHours}}<br /><strong>giờ</strong></span><span>{{minutes}}<br /><strong>phút</strong></span><span>{{seconds}}<br /><strong>giây</strong></span>
               </div>
               <span class="text-[400] mt-[15px] text-[22px] mb-[15px]">Đếm ngược tới ngày sự kiện diễn ra với</span>
               <div class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] px-[30px] mt-[10px]">
@@ -33,12 +34,56 @@
 </template>
 
 <script>
+import { ref, onMounted, onUnmounted } from "vue";
+
 export default {
   name: "TermSection",
   props: {
     msg: String,
   },
+  setup() {
+    const targetDate = new Date("2024-07-07T00:00:00"); // Set your target date here
+    const now = new Date();
+    const diff = targetDate - now;
+
+    const totalHours = ref(Math.floor(diff / (1000 * 60 * 60)));
+    const hours = ref(Math.floor((diff / (1000 * 60 * 60)) % 24));
+    const minutes = ref(Math.floor((diff / (1000 * 60)) % 60));
+    const seconds = ref(Math.floor((diff / 1000) % 60));
+
+    let interval = null;
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        clearInterval(interval);
+        totalHours.value = 0;
+        hours.value = 0;
+        minutes.value = 0;
+        seconds.value = 0;
+        return;
+      }
+
+      totalHours.value = Math.floor(diff / (1000 * 60 * 60));
+      hours.value = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      minutes.value = Math.floor((diff / (1000 * 60)) % 60);
+      seconds.value = Math.floor((diff / 1000) % 60);
+    }
+
+    onMounted(() => {
+      interval = setInterval(updateCountdown, 1000);
+    });
+
+    onUnmounted(() => {
+      clearInterval(interval);
+    });
+
+    return { totalHours, hours, minutes, seconds };
+  },
 };
 </script>
+
 
 <style lang="scss" scoped src="./index.vue.scss"></style>

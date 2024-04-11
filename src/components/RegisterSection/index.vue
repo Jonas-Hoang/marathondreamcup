@@ -16,17 +16,17 @@
                   <span>Vé sớm</span>
                 </h3>
                 <h6 style="text-align: center">
-                  <span>(đến ngày 30/06/2023)</span>
+                  <span>(đến ngày 30/04/2024)</span>
                 </h6>
                 <div class="row row-small flex mb-[7px]">
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
-                      <img width="1920" height="1080" src="../../../assets/images/ticket200.png" alt="ticket200" />
+                      <img width="1920" height="1080" src="../../../assets/images/ticket-01.png" alt="ticket200" />
                     </a>
                   </div>
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
-                      <img width="1920" height="1080" src="../../../assets/images/ticket300.png" alt="ticket300" />
+                      <img width="1920" height="1080" src="../../../assets/images/ticket-02.png" alt="ticket300" />
                     </a>
                   </div>
                 </div>
@@ -36,17 +36,17 @@
                   <span>Vé thường</span>
                 </h3>
                 <h6 style="text-align: center">
-                  <span>(01/07/2023 – 20/07/2023)</span>
+                  <span>(01/05/2023 – 01/06/2024)</span>
                 </h6>
                 <div class="row row-small flex">
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
-                      <img width="1920" height="1080" src="../../../assets/images/ticket250.png" alt="ticket250" />
+                      <img width="1920" height="1080" src="../../../assets/images/ticket-03.png" alt="ticket250" />
                     </a>
                   </div>
                   <div class="col medium-6 small-12 large-6">
                     <a class="" href="https://forms.gle/VbiexwXmJJTp9f9XA" target="_blank" rel="noopener noreferrer">
-                      <img width="1920" height="1080" src="../../../assets/images/ticket400.png" alt="ticket400" />
+                      <img width="1920" height="1080" src="../../../assets/images/ticket-04.png" alt="ticket400" />
                     </a>
                   </div>
                 </div>
