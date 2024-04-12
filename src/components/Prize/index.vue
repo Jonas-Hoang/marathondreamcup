@@ -64,12 +64,12 @@ let id = 0;
 const slides = [
   {
     id: id++,
-    title: "Giải thưởng\ncự ly 5km",
+    title: "Giải thưởng cự ly 5km",
     url: imgPrize5,
   },
   {
     id: id++,
-    title: "Giải thưởng\ncự ly 10km",
+    title: "Giải thưởng cự ly 10km",
     url: imgPrize10,
   },
   {
