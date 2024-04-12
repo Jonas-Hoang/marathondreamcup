@@ -12,10 +12,10 @@
             </div>
             <div class="col medium-5 small-12 large-6" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
               <div class="flex flex-col justify-center">
-                <h3 style="text-align: center">
+                <h3 class="earlybird_ticket" style="text-align: center">
                   <span>Vé sớm</span>
                 </h3>
-                <h6 style="text-align: center">
+                <h6 class="time_early" style="text-align: center">
                   <span>(đến ngày 30/04/2024)</span>
                 </h6>
                 <div class="row row-small flex mb-[7px]">
@@ -32,10 +32,10 @@
                 </div>
               </div>
               <div class="flex flex-col justify-center">
-                <h3 style="text-align: center">
+                <h3 class="normal_ticket" style="text-align: center">
                   <span>Vé thường</span>
                 </h3>
-                <h6 style="text-align: center">
+                <h6 class="time_normal" style="text-align: center">
                   <span>(01/05/2023 – 01/06/2024)</span>
                 </h6>
                 <div class="row row-small flex">

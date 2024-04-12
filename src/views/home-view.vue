@@ -2,7 +2,7 @@
   <nav class="flex flex-wrap items-center justify-between px-2 py-3 bg-[#3055A6] text-gray-100 sticky top-0 z-50">
     <div class="w-[100%] px-4 mx-auto flex flex-wrap items-center justify-between">
       <div>
-        <button @click=" isMobileMenuOpen=!isMobileMenuOpen" class="lg:hidden">
+        <button @click=" isMobileMenuOpen=!isMobileMenuOpen" class="lg:hidden" aria-label="Toggle menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"></path>
           </svg>
@@ -43,7 +43,7 @@
           </nav>
         </div>
         <!-- Close (X) Icon -->
-        <button @click="isMobileMenuOpen = false" class="mb-5 absolute right-[10px] top-[10px]">
+        <button @click="isMobileMenuOpen = false" class="mb-5 absolute right-[10px] top-[10px]" aria-label="Close menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>

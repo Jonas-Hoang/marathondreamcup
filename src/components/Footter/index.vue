@@ -7,7 +7,7 @@
           <div class="col medium-4 small-12 flex-basis-1/3 max-w-[33.3333333%]">
             <div class="col-inner">
               <div class="founder text ml-[40px]">
-                <h4>Đơn vị tổ chức</h4>
+                <h4 class="partner">Đơn vị tổ chức</h4>
               </div>
               <div class="img has-hover x md-x lg-x y md-y lg-y w-[53%]">
                 <div class="img-inner dark"><img width="701" height="450" src="../../../assets/images/logo_DN_DiamondNetwork.png" data-src="../../../assets/images/logo_DN_DiamondNetwork.png" class="attachment-original size-original lazy-load-active" alt="logo_doanh-nghiep" decoding="async" srcset="../../../assets/images/logo_DN_DiamondNetwork.png"></div>
