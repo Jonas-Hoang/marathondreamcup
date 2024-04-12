@@ -30,9 +30,9 @@
 
 <script setup>
 import { ref } from "vue";
-import imgPrize5 from "../../../assets/images/prize5.jpeg";
-import imgPrize10 from "../../../assets/images/prize10.jpeg";
-import imgExtraPrize from "../../../assets/images/extra_prize.jpeg";
+import imgPrize5 from "../../../assets/images/prize5.jpg";
+import imgPrize10 from "../../../assets/images/prize10.jpg";
+import imgExtraPrize from "../../../assets/images/prize_extra.jpg";
 
 const settings = ref({
   itemsToShow: 2,
