@@ -62,15 +62,23 @@ export default {
         totalHours.value = 0;
         hours.value = 0;
         minutes.value = 0;
-        seconds.value = 0;
+        seconds.value = "00";
         return;
       }
 
       totalHours.value = Math.floor(diff / (1000 * 60 * 60));
       hours.value = Math.floor((diff / (1000 * 60 * 60)) % 24);
       minutes.value = Math.floor((diff / (1000 * 60)) % 60);
-      seconds.value = Math.floor((diff / 1000) % 60);
+      seconds.value = formatSeconds(Math.floor((diff / 1000) % 60));
     }
+
+    function formatSeconds(sec) {
+      return sec < 10 ? `0${sec}` : `${sec}`;
+    }
+
+    onMounted(() => {
+      interval = setInterval(updateCountdown, 1000);
+    });
 
     onMounted(() => {
       interval = setInterval(updateCountdown, 1000);
