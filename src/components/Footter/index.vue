@@ -26,7 +26,7 @@
             <div class="col-inner">
               <h4>Bảo trợ truyền thông</h4>
               <div class="img has-hover x md-x lg-x y md-y lg-y">
-                <div class="img-inner dark"><img width="1020" height="517" src="../../../assets/images/bao-tro-truyen-thong.png" data-src="../../../assets/images/bao-tro-truyen-thong.png" data-srcset="../../../assets/images/bao-tro-truyen-thong.png"></div>
+                <div class="img-inner dark"><img width="1020" height="517" src="../../../assets/images/bao-tro-truyen-thong.png" data-src="../../../assets/images/bao-tro-truyen-thong.png" data-srcset="../../../assets/images/bao-tro-truyen-thong.png" alt="logo_truyen_thong"></div>
               </div>
             </div>
           </div>

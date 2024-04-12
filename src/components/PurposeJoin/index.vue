@@ -11,7 +11,7 @@
         <div class="group-content flex lg:flex-row md:flex-col justify-between items-center">
           <div class="tabbed-content mr-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay='500'>
             <ul class="nav" role="tablist">
-              <li v-for="link in links" :key="link.id" :class="{ 'active': activeLinkId === link.id, 'inactive': activeLinkId !== link.id }" class="tab has-icon p-2.5 border-l-4 border-indigo-500" @click="setActiveLink(link.id)" role="purpose-list">
+              <li v-for="link in links" :key="link.id" :class="{ 'active': activeLinkId === link.id, 'inactive': activeLinkId !== link.id }" class="tab has-icon p-2.5 border-l-4 border-indigo-500" @click="setActiveLink(link.id)" role="tab" :aria-selected="activeLinkId === link.id" :tabindex="activeLinkId === link.id ? 0 : -1">
                 <span class="text-white text-[22px] font-[500]" role="button">{{ link.title }}</span>
                 <p class="txt-content text-[16px] text-[#8d8d8d] font-[300]">{{ link.description }}</p>
               </li>

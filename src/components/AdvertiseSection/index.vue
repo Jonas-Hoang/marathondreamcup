@@ -7,43 +7,18 @@
         </div>
         <div class="section-content relative">
           <div class="row align-middle">
-            <div
-              class="col medium-5 small-12 large-5"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-offset="200"
-            >
-              <img
-                width="1138"
-                height="1894"
-                src="../../../assets/images/running-banner.jpeg"
-                data-src="../../../assets/images/running-banner.jpeg"
-                alt="adtervise-image"
-              />
+            <div class="col medium-5 small-12 large-5" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+              <img width="1138" height="1894" :src="running_banner" :data-src="running_banner" alt="adtervise-image" />
             </div>
-            <div
-              v-if="!$isMobile()"
-              class="col medium-5 small-12 large-7"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            >
+            <div v-if="!$isMobile()" class="col medium-5 small-12 large-7" data-aos="fade-left" data-aos-duration="1000">
               <div class="flex flex-col justify-center">
-                <h2
-                  class="font-bold uppercase size italic text-4xl text-start mb-4 text-[#fdb912]"
-                >
+                <h2 class="font-bold uppercase size italic text-4xl text-start mb-4 text-[#fdb912]">
                   Sải bước chiến thắng cùng
                 </h2>
-                <div
-                  class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] mb-6 px-[30px]"
-                >
-                  <span class="my-[15px] text-xl font-bold"
-                    >Running Diamond Cup 2024</span
-                  >
+                <div class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] mb-6 px-[30px]">
+                  <span class="my-[15px] text-xl font-bold">Running Diamond Cup 2024</span>
                 </div>
-                <span
-                  class="font-extralight text-lg mb-6"
-                  style="font-size: 110%"
-                >
+                <span class="font-extralight text-lg mb-6" style="font-size: 110%">
                   Running Diamond Cup 2024 sẽ có 02 cự ly, gồm 5km và 10km dành
                   cho các vận động viên phong trào nam và nữ. Cung đường chạy
                   của giải đấu với những con đường mang vẻ đẹp nên thơ, vừa chất
@@ -60,29 +35,15 @@
                 </span>
               </div>
             </div>
-            <div
-              v-if="$isMobile()"
-              class="col medium-5 small-12 large-7"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+            <div v-if="$isMobile()" class="col medium-5 small-12 large-7" data-aos="fade-up" data-aos-duration="1000">
               <div class="flex flex-col justify-center">
-                <h2
-                  class="font-bold uppercase size italic text-4xl mb-4 text-[#fdb912] text-center"
-                >
+                <h2 class="font-bold uppercase size italic text-4xl mb-4 text-[#fdb912] text-center">
                   Sải bước chiến thắng cùng
                 </h2>
-                <div
-                  class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] mb-6 px-[30px]"
-                >
-                  <span class="my-[15px] text-xl font-bold"
-                    >Running Diamond Cup 2024</span
-                  >
+                <div class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] mb-6 px-[30px]">
+                  <span class="my-[15px] text-xl font-bold">Running Diamond Cup 2024</span>
                 </div>
-                <span
-                  class="font-extralight text-lg mb-6"
-                  style="font-size: 110%"
-                >
+                <span class="font-extralight text-lg mb-6" style="font-size: 110%">
                   Running Diamond Cup 2024 sẽ có 02 cự ly, gồm 5km và 10km dành
                   cho các vận động viên phong trào nam và nữ. Cung đường chạy
                   của giải đấu với những con đường mang vẻ đẹp nên thơ, vừa chất
@@ -106,6 +67,10 @@
   </div>
 </template>
 
+<script setup>
+import running_banner from "../../../assets/images/running-banner.jpeg";
+</script>
+
 <script>
 export default {
   name: "AdvertiseSection",
@@ -114,5 +79,6 @@ export default {
   },
 };
 </script>
+
 
 <style lang="scss" scoped src="./index.vue.scss"></style>

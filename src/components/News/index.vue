@@ -4,13 +4,13 @@
       <div class="section-bg-overlay absolute fill">
         <div class="content">
           <div class="row">
-            <h1 class="!text-[#2d63f7]">Tin Tức - Sự Kiện</h1>
+            <h1 class="marathon_dream_cup !text-[#2d63f7]">Tin Tức - Sự Kiện</h1>
             <Carousel v-bind="settings" :breakpoints="breakpoints">
               <Slide v-for="slide in slides" :key="slide.id" class="draggable">
                 <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
                   <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag"><img :src="slide.img" alt="so do duong chay" /></div>
                   <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag">
-                    <h2>{{ slide.title }}</h2>
+                    <h2 class="marathon_dream_cup_text">{{ slide.title }}</h2>
                   </div>
                   <p>
                     {{ slide.content }}
@@ -37,7 +37,7 @@ import news2 from "../../../assets/images/news/news2.jpeg";
 import news3 from "../../../assets/images/news/news3.jpeg";
 import news4 from "../../../assets/images/news/news4.jpeg";
 import news5 from "../../../assets/images/news/news5.jpeg";
-import news6 from "../../../assets/images/news/news6.jpeg";
+import news6 from "../../../assets/images/news/news6.webp";
 import news7 from "../../../assets/images/news/news7.jpeg";
 import news8 from "../../../assets/images/news/news8.jpeg";
 import news9 from "../../../assets/images/roadmap.jpg";

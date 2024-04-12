@@ -4,7 +4,7 @@
       <div class="section-bg-overlay absolute fill">
         <div class="content">
           <div class="row">
-            <h1>Đối tác - Nhà tài trợ</h1>
+            <h1 class="marathon_dream_cup">Đối tác - Nhà tài trợ</h1>
             <Carousel v-bind="settings" :breakpoints="breakpoints">
               <Slide v-for="slide in slides" :key="slide.id" class="draggable">
                 <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
@@ -64,7 +64,7 @@ import co from "../../../assets/images/partners/co.png";
 import diamondloung from "../../../assets/images/partners/diamondloung.jpg";
 import ibuki from "../../../assets/images/partners/ibuki.png";
 import ikugai from "../../../assets/images/partners/ikugai.jpg";
-import laang from "../../../assets/images/partners/laang.png";
+import laang from "../../../assets/images/partners/laang.jpg";
 import lai from "../../../assets/images/partners/lai.jpg";
 import lua from "../../../assets/images/partners/lua.jpg";
 import lux68 from "../../../assets/images/partners/lux68.png";
@@ -74,7 +74,7 @@ import qui from "../../../assets/images/partners/qui.jpg";
 import ros from "../../../assets/images/partners/ros.jpg";
 import son from "../../../assets/images/partners/son.png";
 import towa from "../../../assets/images/partners/towa.jpg";
-import wann from "../../../assets/images/partners/wann.jpg";
+import wann from "../../../assets/images/partners/wann.png";
 
 let id = 0;
 const hasMoved = ref(false);
