@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-800 text-gray-100 relative" id="sign-up">
-    <div class="bg section-bg fill ">
+    <div class="bg section-bg fill">
       <div class="section-bg-overlay absolute fill">
         <div class="content">
           <div class="row">
@@ -9,7 +9,9 @@
               <span class="hightlight-text">trích 100K</span> và<br />
               được trao cho Hội Liên Hiệp Thanh Niên Việt Nam Thành Phố gửi
               đến<br />
-              <span class="hightlight-text">những người có hoàn cảnh khó khăn.</span>
+              <span class="hightlight-text"
+                >những người có hoàn cảnh khó khăn.</span
+              >
             </p>
             <button @click="openForm">
               <div class="button-content">Đăng ký ngay</div>
@@ -29,7 +31,7 @@ export default {
   },
   methods: {
     openForm() {
-      window.open("https://forms.gle/X77gRWWHBweG4bB28", "_blank");
+      window.open("https://ticket.irace.vn/runnind-diamond-cup-2024", "_blank");
     },
   },
 };
