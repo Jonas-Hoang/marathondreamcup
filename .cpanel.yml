@@ -1,5 +1,5 @@
+---
 deployment:
   tasks:
     - export DEPLOYPATH=/home/bfhykkgzhosting/public_html/runningdiamondcup.com
-    - /bin/cp -rf images $DEPLOYPATH
-    - /bin/cp -rf content $DEPLOYPATH
+    -/bin/cp -R * $DEPLOYPATH
