@@ -147,10 +147,19 @@ const scrollToSection = (link) => {
   ) {
     selectedLink.value = link.text;
     selectedRouter.value = "";
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    alert(0);
     router.replace({ path: "/" + router.replace({ path: "/home" }) + "" });
   } else {
     selectedLink.value = link.text;
     selectedRouter.value = "";
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
 };
 

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-800 text-gray-100 relative" id="sign-up">
-    <div class="bg section-bg fill bg-fill bg-loaded">
+    <div class="bg section-bg fill ">
       <div class="section-bg-overlay absolute fill">
         <div class="content">
           <div class="row">

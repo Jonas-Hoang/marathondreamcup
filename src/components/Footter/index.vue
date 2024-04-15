@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <div class="footer text-[#f1f1f1] relative py-[60px]">
-      <div class="bg section-bg section-bg-overlay fill bg-fill bg-loaded"></div>
+      <div class="bg section-bg section-bg-overlay fill "></div>
       <div class="section-content relative">
         <div class="row flex" id="row-1367639483">
           <div class="col medium-4 small-12 flex-basis-1/3 max-w-[33.3333333%]">

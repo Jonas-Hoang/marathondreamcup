@@ -2,7 +2,7 @@
   <div id="register">
     <div class="advertise-section text-[#f1f1f1] relative">
       <section class="pt-[65px]">
-        <div class="bg section-bg fill bg-fill bg-loaded">
+        <div class="bg section-bg fill ">
           <div class="section-bg-overlay absolute fill"></div>
         </div>
         <div class="section-content relative">
