@@ -77,18 +77,18 @@ const slides = [
   {
     id: id++,
     title:
-      "Cô gái truyền cảm hứng Phạm Thị Hồng Lệ làm đại sứ giải marathon Dream Cup 2023",
+      "Cô gái truyền cảm hứng Phạm Thị Hồng Lệ làm đại sứ giải Running Diamond Cup 2024",
     content:
-      "Giải chạy marathon Dream Cup 2023 đang nhận được sự quan tâm từ những ai yêu thích bộ môn điền kinh, nhất là khi VĐV cự ly 10 km Phạm Thị Hồng Lệ từng đoạt HCV SEA Games 31 được chọn làm đại sứ giải đấu.",
+      "Giải chạy Running Diamond Cup 2024 đang nhận được sự quan tâm từ những ai yêu thích bộ môn điền kinh, nhất là khi VĐV cự ly 10 km Phạm Thị Hồng Lệ từng đoạt HCV SEA Games 31 được chọn làm đại sứ giải đấu.",
     img: news1,
     url: "https://thanhnien.vn/nu-hoang-sea-games-pham-thi-hong-le-lam-dai-su-giai-marathon-dream-cup-2023-1852306291024291.htm#",
   },
   {
     id: id++,
     title:
-      "Cung đường đẹp nhất TP Hồ Chí Minh trở thành đường chạy cho Runners của Marathon Dream Cup 2023",
+      "Cung đường đẹp nhất TP Hồ Chí Minh trở thành đường chạy cho Runners của Running Diamond Cup 2024",
     content:
-      "VTV.vn - Marathon Dream Cup 2023 nhằm thúc đẩy tinh thần thể dục thể thao rèn luyện thể chất lẫn của cộng đồng với thông điệp “Reach Your Dream - Chinh phục ước mơ”.",
+      "VTV.vn - Running Diamond Cup 2024 nhằm thúc đẩy tinh thần thể dục thể thao rèn luyện thể chất lẫn của cộng đồng với thông điệp “Reach Your Dream - Chinh phục ước mơ”.",
     img: news2,
     url: "https://vtv.vn/the-thao/cung-duong-dep-nhat-tp-ho-chi-minh-tro-thanh-duong-chay-cho-runners-cua-marathon-dream-cup-2023-20230623095257109.htm",
   },
@@ -96,7 +96,7 @@ const slides = [
     id: id++,
     title: 'Giải Marathon thiện nguyện với tiền thưởng "khủng"',
     content:
-      "(NLĐO) - Hội Liên hiệp Thanh niên Việt Nam TP HCM phối hợp với Diamond Entertainment tổ chức Giải Marathon Dream Cup 2023 từ ngày 30-7 nhằm giúp đỡ những hoàn cảnh khó khăn",
+      "(NLĐO) - Hội Liên hiệp Thanh niên Việt Nam TP HCM phối hợp với Diamond Entertainment tổ chức Giải Running Diamond Cup 2024 từ ngày 30-7 nhằm giúp đỡ những hoàn cảnh khó khăn",
     img: news3,
     url: "https://nld.com.vn/the-thao/giai-marathon-thien-nguyen-voi-tien-thuong-khung-20230623132610498.htm",
   },
@@ -111,9 +111,9 @@ const slides = [
   {
     id: id++,
     title:
-      "Marathon Dream Cup 2023 - Reach Your Dream: Tổng giá trị giải thưởng lên đến gần 150 triệu đồng",
+      "Running Diamond Cup 2024 - Reach Your Dream: Tổng giá trị giải thưởng lên đến gần 150 triệu đồng",
     content:
-      "Diamond Entertainment do siêu mẫu Hồ Đức Vĩnh làm đại diện phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Marathon Dream Cup 2023.",
+      "Diamond Entertainment do siêu mẫu Hồ Đức Vĩnh làm đại diện phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Running Diamond Cup 2024.",
     img: news5,
     url: "https://thethao.sggp.org.vn/marathon-dream-cup-2023-reach-your-dream-tong-gia-tri-giai-thuong-len-den-gan-150-trieu-dong-post694749.html",
   },
@@ -122,16 +122,16 @@ const slides = [
     title:
       "Siêu mẫu Hồ Đức Vĩnh và loạt sao Việt tham gia giải chạy gây quỹ thiện nguyện",
     content:
-      "Mới đây, siêu mẫu Hồ Đức Vĩnh đã phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TP.HCM phát động giải chạy Marathon Dream Cup 2023 vì cộng đồng.",
+      "Mới đây, siêu mẫu Hồ Đức Vĩnh đã phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TP.HCM phát động giải chạy Running Diamond Cup 2024 vì cộng đồng.",
     img: news6,
     url: "https://soha.vn/sieu-mau-ho-duc-vinh-va-loat-sao-viet-tham-gia-giai-chay-gay-quy-thien-nguyen-20230623105225775.htm",
   },
   {
     id: id++,
     title:
-      "Diamond Entertainment ‘bắt tay’ cùng Hội Liên hiệp Thanh niên Việt Nam tổ chức Marathon Dream Cup 2023 gây quỹ từ thiện",
+      "Diamond Entertainment ‘bắt tay’ cùng Hội Liên hiệp Thanh niên Việt Nam tổ chức Running Diamond Cup 2024 gây quỹ từ thiện",
     content:
-      "Diamond Entertainment do siêu mẫu Hồ Đức Vĩnh làm đại diện phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Marathon Dream Cup 2023.",
+      "Diamond Entertainment do siêu mẫu Hồ Đức Vĩnh làm đại diện phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Running Diamond Cup 2024.",
     img: news7,
     url: "https://thethaongaynay.com.vn/the-thao/diamond-entertainment-bat-tay-cung-hoi-lien-hiep-thanh-nien-viet-nam-to-chuc-marathon-dream-cup-2023-gay-quy-tu-thien.html",
   },
@@ -139,7 +139,7 @@ const slides = [
     id: id++,
     title: "Siêu mẫu Hồ Đức Vĩnh: ‘Chạy bộ giúp tôi vượt qua những lúc bế tắc’",
     content:
-      "Nam siêu mẫu tổ chức giải chạy từ thiện có tên “Marathon Dream Cup 2023” để lan tỏa những nguồn năng lượng tích cực từ hoạt động chạy bộ.",
+      "Nam siêu mẫu tổ chức giải chạy từ thiện có tên “Running Diamond Cup 2024” để lan tỏa những nguồn năng lượng tích cực từ hoạt động chạy bộ.",
     img: news8,
     url: "https://vtcnews.vn/sieu-mau-ho-duc-vinh-chay-bo-giup-toi-vuot-qua-nhung-luc-be-tac-ar801419.html",
   },
@@ -147,7 +147,7 @@ const slides = [
     id: id++,
     title: "Tổ chức giải chạy từ thiện qua cung đường đẹp nhất TPHCM",
     content:
-      "Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Marathon Dream Cup 2023. Đây là hoạt động nhằm thúc đẩy tinh thần thể dục thể thao rèn luyện thể chất lẫn của cộng đồng với thông điệp “Reach Your Dream – Chinh phục ước mơ”. Thông qua đó, chương trình mong đóng góp quỹ từ thiện cho những mảnh đời khó khăn.",
+      "Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Running Diamond Cup 2024. Đây là hoạt động nhằm thúc đẩy tinh thần thể dục thể thao rèn luyện thể chất lẫn của cộng đồng với thông điệp “Reach Your Dream – Chinh phục ước mơ”. Thông qua đó, chương trình mong đóng góp quỹ từ thiện cho những mảnh đời khó khăn.",
     img: news9,
     url: "https://laodongtre.laodong.vn/the-thao/to-chuc-giai-chay-tu-thien-qua-cung-duong-dep-nhat-tphcm-1207973.ldo",
   },

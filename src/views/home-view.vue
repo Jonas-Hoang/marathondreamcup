@@ -9,7 +9,9 @@
         </button>
       </div>
       <div class="logo_main relative flex justify-between lg:w-auto  pr-4 lg:static lg:block lg:justify-start">
-        <a href="/" @click="scrollTo"><img src="../../assets/images/logo_RDC2024.png" alt="logo" class="h-[60px]" /></a>
+        <router-link to="/" @click="scrollTo">
+          <el-image style="height: 60px; width: 100%;" :src="logo" fit="cover" lazy alt="logo" />
+        </router-link>
       </div>
       <div v-bind:class="{'hidden': !isMobileMenuOpen, 'flex': isMobileMenuOpen}" class="lg:flex lg:flex-grow items-center">
         <nav :class="{ 'flex': isMobileMenuOpen, 'hidden': !isMobileMenuOpen }" class="flex-col flex-grow lg:flex lg:flex-row lg:items-center lg:justify-around">
@@ -56,15 +58,19 @@
 
 </template>
 
+
 <script>
 import { ref } from "vue";
 import BodyView from "./body-view.vue";
 import router from "@/router";
+import { ElImage } from "element-plus";
+import logoURL from "../../assets/images/logo_RDC2024.png";
 
 export default {
   name: "HomeView",
   components: {
     BodyView,
+    ElImage,
   },
   setup() {
     const isMobileMenuOpen = ref(false);
@@ -80,6 +86,7 @@ export default {
       { text: "TÌM ẢNH", name: "FindPicture", type: "router-link" },
       { text: "KẾT QUẢ", name: "ResultRunning", type: "router-link" },
     ]);
+    const logo = ref(logoURL);
 
     const selectLink = (link) => {};
 
@@ -130,6 +137,7 @@ export default {
       links,
       selectedLink,
       selectedRouter,
+      logo,
       closeMenu,
       selectLink,
       selectRouter,
@@ -148,6 +156,11 @@ export default {
   a {
     border-bottom: 1px #3b3a3a solid;
     color: hsla(0, 0%, 100%, 0.8);
+  }
+}
+:deep(.el-image) {
+  img {
+    height: 60px;
   }
 }
 </style>

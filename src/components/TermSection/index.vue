@@ -11,7 +11,7 @@
               <h2 v-if="!$isMobile()" class="font-bold uppercase size italic text-4xl text-start mb-4">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
               <h2 v-if="$isMobile()" class="font-bold uppercase size italic text-4xl text-center mb-4">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
               <p class="text-[19px] font-[300]">Running Diamond Cup 2024</p>
-              <a class="button bg-[#ddc180] my-[20px] text-black px-[1.2em] max-w-[100%] text-[1.12em]" rel="noopener noreferrer" href="https://drive.google.com/file/d/1JgNWajG0Ic7oPdpE4PSE_zCyfR0LZixx/view?usp=sharing" target="_blank" style="border-radius: 99px"><span>Đọc kỹ điều khoản &amp; điều kiện</span><i class="icon-angle-right" aria-hidden="true"></i></a>
+              <a class="button bg-[#ddc180] my-[20px] text-black px-[1.2em] max-w-[100%] text-[1.12em]" rel="noopener noreferrer" href="https://drive.google.com/file/d/1SVUsMCFWrEGW6PjaXa3WlL-VS21sKH8S/view" target="_blank" style="border-radius: 99px"><span>Đọc kỹ điều khoản &amp; điều kiện</span><i class="icon-angle-right" aria-hidden="true"></i></a>
               <div class="ux-timer">
                 <span>{{totalHours}}<br /><strong>giờ</strong></span><span>{{minutes}}<br /><strong>phút</strong></span><span>{{seconds}}<br /><strong>giây</strong></span>
               </div>
@@ -23,7 +23,7 @@
             </div>
             <div class="col medium-5 small-12 large-5 " style="paddingp-bottom: 0 !important;" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
               <div class="flex flex-col justify-center">
-                <img width="816" height="929" src="https://marathondreamcup.vn/wp-content/uploads/2023/06/dat-ve-ngay-23.png" alt="term-image" />
+                <img width="816" height="929" :src="raceday" :data-src="raceday" v-lazy="raceday" alt="term-image" />
               </div>
             </div>
           </div>
@@ -33,8 +33,10 @@
   </div>
 </template>
 
+
 <script>
 import { ref, onMounted, onUnmounted } from "vue";
+import race_day from "../../../assets/images/race_day.png";
 
 export default {
   name: "TermSection",
@@ -52,6 +54,7 @@ export default {
     const seconds = ref(Math.floor((diff / 1000) % 60));
 
     let interval = null;
+    const raceday = ref(race_day);
 
     function updateCountdown() {
       const now = new Date();
@@ -88,7 +91,7 @@ export default {
       clearInterval(interval);
     });
 
-    return { totalHours, hours, minutes, seconds };
+    return { raceday, totalHours, hours, minutes, seconds };
   },
 };
 </script>

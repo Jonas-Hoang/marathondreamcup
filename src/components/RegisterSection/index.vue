@@ -36,7 +36,7 @@
                   <span>Vé thường</span>
                 </h3>
                 <h6 class="time_normal" style="text-align: center">
-                  <span>(01/05/2023 – 01/06/2024)</span>
+                  <span>(01/05/2024 – 01/06/2024)</span>
                 </h6>
                 <div class="row row-small flex">
                   <div class="col medium-6 small-12 large-6">

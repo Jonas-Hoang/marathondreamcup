@@ -22,6 +22,8 @@
 }
 
 .section-content {
+    min-height: 500px;
+    contain: layout style;
     position: relative !important;
     .row {
         @media (min-width: 850px) {

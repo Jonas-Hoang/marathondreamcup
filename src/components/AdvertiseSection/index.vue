@@ -8,7 +8,7 @@
         <div class="section-content relative">
           <div class="row align-middle">
             <div class="col medium-5 small-12 large-5" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
-              <img width="1138" height="1894" :src="running_banner" :data-src="running_banner" alt="adtervise-image" />
+              <img :src="running_banner" :data-src="running_banner" v-lazy="running_banner" alt="adtervise-image" width="300" height="500" />
             </div>
             <div v-if="!$isMobile()" class="col medium-5 small-12 large-7" data-aos="fade-left" data-aos-duration="1000">
               <div class="flex flex-col justify-center">
@@ -16,7 +16,7 @@
                   Sải bước chiến thắng cùng
                 </h2>
                 <div class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] mb-6 px-[30px]">
-                  <span class="my-[15px] text-xl font-bold">Running Diamond Cup 2024</span>
+                  <span class="my-[15px] text-3xl font-bold">Running Diamond Cup 2024</span>
                 </div>
                 <span class="font-extralight text-lg mb-6" style="font-size: 110%">
                   Running Diamond Cup 2024 sẽ có 02 cự ly, gồm 5km và 10km dành
@@ -41,7 +41,7 @@
                   Sải bước chiến thắng cùng
                 </h2>
                 <div class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] mb-6 px-[30px]">
-                  <span class="my-[15px] text-xl font-bold">Running Diamond Cup 2024</span>
+                  <span class="my-[15px] text-3xl font-bold">Running Diamond Cup 2024</span>
                 </div>
                 <span class="font-extralight text-lg mb-6" style="font-size: 110%">
                   Running Diamond Cup 2024 sẽ có 02 cự ly, gồm 5km và 10km dành
