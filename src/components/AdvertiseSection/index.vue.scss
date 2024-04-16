@@ -7,7 +7,7 @@
     background-repeat: no-repeat !important;
     background-size: cover !important;
     .section-bg-overlay {
-        background-color: rgba(0, 80, 202, 0.907);
+        background-image: linear-gradient(white, #a4ffff, #38beff);
     }
 }
 
@@ -38,6 +38,7 @@
     img {
         width: 100%;
         border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 }
 

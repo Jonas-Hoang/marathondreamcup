@@ -6,12 +6,8 @@
           <div class="row">
             <p>
               Lệ phí tham gia của người thi chạy marathon sẽ được
-              <span class="hightlight-text">trích 100K</span> và<br />
-              được trao cho Hội Liên Hiệp Thanh Niên Việt Nam Thành Phố gửi
-              đến<br />
-              <span class="hightlight-text"
-                >những người có hoàn cảnh khó khăn.</span
-              >
+              <span class="hightlight-text text-[#214184]">trích 100K</span> và<br />được trao cho Hội Liên Hiệp Thanh Niên Việt Nam Thành Phố gửiđến<br />
+              <span class="hightlight-text text-[#214184]">những người có hoàn cảnh khó khăn.</span>
             </p>
             <button @click="openForm">
               <div class="button-content">Đăng ký ngay</div>

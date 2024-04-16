@@ -1,91 +1,82 @@
 .section-bg {
-  background-image: url(../../../assets/images/signup_bgr.jpg);
-  width: 100%;
-  height: 342px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  opacity: 1;
-
-  .fill {
-    height: 100%;
-    left: 0;
-    margin: 0 !important;
-    padding: 0 !important;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .section-bg-overlay {
-    background-color: rgba(0, 80, 202, 0.907);
-  }
-
-  .content {
-    height: 100%;
-  }
-
-  .row {
-    height: 100%;
-    max-width: 1172px;
-    margin: 0px auto;
-    padding: 50px 0;
-  }
-
-  p {
-    font-size: 180%;
-    font-weight: 700;
-    color: #fdb913;
-    text-align: center;
-    font-style: italic;
-    padding-bottom: 40px;
-  }
-
-  .hightlight-text {
-    color: #fff;
-  }
-
-  button {
-    background-color: rgb(230, 195, 125);
-    border-radius: 20px;
-    color: #000;
-    font-weight: 700;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  button:hover,
-  button:active {
-    background-color: rgb(245, 202, 102);
-  }
-  .button-content {
-    padding: 10px 30px;
-  }
-
-  @media (min-width: 100px) {
-    p {
-      font-size: 100%;
+    background-image: url(../../../assets/images/signup_bgr.jpg);
+    width: 100%;
+    height: 342px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    opacity: 1;
+    .fill {
+        height: 100%;
+        left: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
-  }
-  @media (min-width: 300px) {
-    p {
-      font-size: 110%;
+    .section-bg-overlay {
+        background-image: linear-gradient(white, #a4ffff, #38beff);
     }
-  }
-  @media (min-width: 500px) {
-    p {
-      font-size: 130%;
+    .content {
+        height: 100%;
     }
-  }
-  @media (min-width: 600px) {
-    p {
-      font-size: 150%;
+    .row {
+        height: 100%;
+        max-width: 1172px;
+        margin: 0px auto;
+        padding: 50px 0;
     }
-  }
-  @media (min-width: 900px) {
     p {
-      font-size: 170%;
+        font-size: 180%;
+        font-weight: 700;
+        color: #fdb913;
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 40px;
     }
-  }
+    // .hightlight-text {
+    //     color: #fff;
+    // }
+    button {
+        background-color: rgb(230, 195, 125);
+        border-radius: 20px;
+        color: #000;
+        font-weight: 700;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    button:hover,
+    button:active {
+        background-color: rgb(245, 202, 102);
+    }
+    .button-content {
+        padding: 10px 30px;
+    }
+    @media (min-width: 100px) {
+        p {
+            font-size: 100%;
+        }
+    }
+    @media (min-width: 300px) {
+        p {
+            font-size: 110%;
+        }
+    }
+    @media (min-width: 500px) {
+        p {
+            font-size: 130%;
+        }
+    }
+    @media (min-width: 600px) {
+        p {
+            font-size: 150%;
+        }
+    }
+    @media (min-width: 900px) {
+        p {
+            font-size: 170%;
+        }
+    }
 }

@@ -7,7 +7,7 @@
     background-repeat: no-repeat !important;
     background-size: cover !important;
     .section-bg-overlay {
-        background-color: rgba(0, 80, 202, 0.907);
+        background-image: linear-gradient(white, #a4ffff, #38beff);
     }
 }
 
@@ -46,12 +46,11 @@
         width: 100%;
         border-radius: 10px;
         scale: 1.45;
-        margin-left: 40px;
-        @media (max-width: 850px) {
-            scale: 1.12;
+        margin-left: 70px;
+        @media (max-width: 1000px) {
+            scale: 1;
             margin-top: 60px;
             margin-left: 0;
-            padding-bottom: 12px;
         }
     }
 }
@@ -121,8 +120,8 @@
         padding: .4em .1em .1em;
         margin: 0 .05em .2em;
         border-radius: 5px;
-        color: white !important;
-        background: #003281e0 !important;
+        color: #214184 !important;
+        background: #64ccff !important;
         strong {
             margin-inline: 10px;
             font-size: 30%;
