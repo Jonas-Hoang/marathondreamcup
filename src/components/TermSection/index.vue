@@ -11,7 +11,7 @@
               <h2 v-if="!$isMobile()" class="font-bold uppercase size italic text-4xl text-start mb-4 text-[#faab25]">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
               <h2 v-if="$isMobile()" class="font-bold uppercase size italic text-4xl text-center mb-4 text-[#faab25]">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
               <p class="text-center font-[600] !text-[27px] text-[#214184]">Running Diamond Cup 2024</p>
-              <a class="button bg-[#faab25] my-[20px] text-black px-[1.2em] max-w-[100%] text-[1.12em] hover:bg-yellow-500" rel="noopener noreferrer" href="https://drive.google.com/file/d/1SVUsMCFWrEGW6PjaXa3WlL-VS21sKH8S/view" target="_blank" style="border-radius: 99px"><span>Đọc kỹ điều khoản &amp; điều kiện</span><i class="icon-angle-right" aria-hidden="true"></i></a>
+              <a class="button bg-[#ffbe4e] my-[20px] text-black px-[1.2em] max-w-[100%] hover:bg-[#f5ca66]" rel="noopener noreferrer" href="https://drive.google.com/file/d/1SVUsMCFWrEGW6PjaXa3WlL-VS21sKH8S/view" target="_blank" style="border-radius: 99px"><span>Đọc kỹ điều khoản &amp; điều kiện</span><i class="icon-angle-right" aria-hidden="true"></i></a>
               <div class="ux-timer">
                 <span>{{totalHours}}<br /><strong>giờ</strong></span><span>{{minutes}}<br /><strong>phút</strong></span><span>{{seconds}}<br /><strong>giây</strong></span>
               </div>
