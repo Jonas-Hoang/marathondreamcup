@@ -5,7 +5,7 @@
         <h2 v-if="!$isMobile()" class="mb-[30px] italic text-[#f1f1f1] text-[36px] font-[600]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay='500'>
           <span>MỤC ĐÍCH <br /><span style="color: #d6b571">RUNNING DIAMOND CUP</span></span>
         </h2>
-        <h2 v-if="$isMobile()" class="mb-[30px] text-center italic text-[#f1f1f1] text-[36px] font-[600]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay='500'>
+        <h2 v-if="$isMobile()" class="mb-[30px] text-center italic text-[#f1f1f1] text-[27px] font-[600]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay='500'>
           <span>MỤC ĐÍCH <br /><span style="color: #d6b571">RUNNING DIAMOND CUP</span></span>
         </h2>
         <div class="group-content flex lg:flex-row md:flex-col justify-between items-center">

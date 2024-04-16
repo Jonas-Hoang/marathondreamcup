@@ -41,7 +41,7 @@
                   Sải bước chiến thắng cùng
                 </h2>
                 <div class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] mb-6 px-[30px]">
-                  <span class="text-[#214184] my-[15px] text-3xl font-bold">Running Diamond Cup 2024</span>
+                  <span class="text-center text-[#214184] my-[15px] text-3xl font-bold">Running Diamond Cup 2024</span>
                 </div>
                 <span class="text-[#214184] font-[400] text-lg mb-6" style="font-size: 110%">
                   Running Diamond Cup 2024 sẽ có 02 cự ly, gồm 5km và 10km dành
