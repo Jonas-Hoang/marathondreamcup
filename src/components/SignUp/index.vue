@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     openForm() {
-      window.open("https://ticket.irace.vn/runnind-diamond-cup-2024", "_blank");
+      window.open("https://ticket.irace.vn/running-diamond-cup-2024", "_blank");
     },
   },
 };

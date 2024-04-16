@@ -37,7 +37,7 @@
                   <div class="col medium-6 small-12 large-6">
                     <a
                       class=""
-                      href="https://ticket.irace.vn/runnind-diamond-cup-2024"
+                      href="https://ticket.irace.vn/running-diamond-cup-2024"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -52,7 +52,7 @@
                   <div class="col medium-6 small-12 large-6">
                     <a
                       class=""
-                      href="https://ticket.irace.vn/runnind-diamond-cup-2024"
+                      href="https://ticket.irace.vn/running-diamond-cup-2024"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -77,7 +77,7 @@
                   <div class="col medium-6 small-12 large-6">
                     <a
                       class=""
-                      href="https://ticket.irace.vn/runnind-diamond-cup-2024"
+                      href="https://ticket.irace.vn/running-diamond-cup-2024"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -92,7 +92,7 @@
                   <div class="col medium-6 small-12 large-6">
                     <a
                       class=""
-                      href="https://ticket.irace.vn/runnind-diamond-cup-2024"
+                      href="https://ticket.irace.vn/running-diamond-cup-2024"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -133,7 +133,7 @@ export default {
   },
   methods: {
     openForm() {
-      window.open("https://ticket.irace.vn/runnind-diamond-cup-2024", "_blank");
+      window.open("https://ticket.irace.vn/running-diamond-cup-2024", "_blank");
     },
   },
 };
