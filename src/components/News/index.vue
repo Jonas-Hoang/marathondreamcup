@@ -1,15 +1,34 @@
 <template>
   <div class="bg-gray-800 text-gray-100 relative">
-    <div class="bg section-bg fill ">
+    <div class="bg section-bg fill">
       <div class="section-bg-overlay absolute fill">
         <div class="content">
           <div class="row">
-            <h1 class="marathon_dream_cup !text-[#2d63f7]">Tin Tức - Sự Kiện</h1>
+            <h1 class="marathon_dream_cup !text-[#2d63f7]">
+              Tin Tức - Sự Kiện
+            </h1>
             <Carousel v-bind="settings" :breakpoints="breakpoints">
               <Slide v-for="slide in slides" :key="slide.id" class="draggable">
-                <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
-                  <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag"><img :src="slide.img" alt="so do duong chay" /></div>
-                  <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag">
+                <div
+                  class="col"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200"
+                >
+                  <div
+                    @click.prevent="handleClick(slide.url)"
+                    @mousedown="startDrag"
+                    @mousemove="whileDragging"
+                    @mouseup="stopDrag"
+                  >
+                    <img :src="slide.img" alt="so do duong chay" />
+                  </div>
+                  <div
+                    @click.prevent="handleClick(slide.url)"
+                    @mousedown="startDrag"
+                    @mousemove="whileDragging"
+                    @mouseup="stopDrag"
+                  >
                     <h2 class="marathon_dream_cup_text">{{ slide.title }}</h2>
                   </div>
                   <p>
@@ -41,6 +60,7 @@ import news6 from "../../../assets/images/news/news6.webp";
 import news7 from "../../../assets/images/news/news7.jpeg";
 import news8 from "../../../assets/images/news/news8.jpeg";
 import news9 from "../../../assets/images/roadmap.jpg";
+import news10 from "../../../assets/images/news/news10.jpg";
 
 let id = 0;
 const hasMoved = ref(false);
@@ -74,6 +94,15 @@ const breakpoints = ref({
 });
 
 const slides = [
+  {
+    id: id++,
+    title:
+      "Khởi động giải chạy 'Cung đường kim cương' với số lượng VĐV tăng gấp đôi",
+    content:
+      "Sau mùa 1 đầy thành công với tên gọi giải chạy Dream Cup 2023, Hội Liên hiệp Thanh niên Việt Nam TP.HCM phối hợp với Diamond Network tổ chức giải Running Diamond Cup 2024 diễn ra vào ngày 7.7.2024 nhằm giúp đỡ những hoàn cảnh khó khăn.",
+    img: news10,
+    url: "https://thanhnien.vn/khoi-dong-giai-chay-cung-duong-kim-cuong-voi-so-luong-vdv-tang-gap-doi-185240416095412899.htm",
+  },
   {
     id: id++,
     title:
