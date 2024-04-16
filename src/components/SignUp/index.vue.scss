@@ -17,6 +17,7 @@
     }
     .section-bg-overlay {
         background-image: linear-gradient(white 2%, #a4ffff 24%, #38beff 75%);
+        opacity: 0.86;
     }
     .content {
         height: 100%;
@@ -39,7 +40,7 @@
     //     color: #fff;
     // }
     button {
-        background-color: rgb(230, 195, 125);
+        background-color: #ffbe4e;
         border-radius: 20px;
         color: #000;
         font-weight: 700;
