@@ -13,7 +13,10 @@
               <p class="text-center font-[600] !text-[27px] text-[#214184]">Running Diamond Cup 2024</p>
               <a class="button bg-[#ffbe4e] my-[20px] text-black px-[1.2em] max-w-[100%] hover:bg-[#f5ca66]" rel="noopener noreferrer" href="https://drive.google.com/file/d/1SVUsMCFWrEGW6PjaXa3WlL-VS21sKH8S/view" target="_blank" style="border-radius: 99px"><span>Đọc kỹ điều khoản &amp; điều kiện</span><i class="icon-angle-right" aria-hidden="true"></i></a>
               <div class="ux-timer">
-                <span>{{totalHours}}<br /><strong>giờ</strong></span><span>{{minutes}}<br /><strong>phút</strong></span><span>{{seconds}}<br /><strong>giây</strong></span>
+                <span>{{days}}<br /><strong>ngày</strong></span>
+                <span>{{hours}}<br /><strong>giờ</strong></span>
+                <span>{{minutes}}<br /><strong>phút</strong></span>
+                <span>{{seconds}}<br /><strong>giây</strong></span>
               </div>
               <span class="text-[400] mt-[15px] text-[22px] mb-[10px] text-[#214184]">Đếm ngược tới ngày sự kiện diễn ra với</span>
               <div class="flex items-center justify-center lg:w-[80%] md:w-[90%] sm:[100%] px-[30px] mt-[5px] text-[#214184]">
@@ -44,10 +47,11 @@ export default {
     msg: String,
   },
   setup() {
-    const targetDate = new Date("2024-07-07T00:00:00"); // Set your target date here
+    const targetDate = new Date("2024-07-01T00:00:00"); // Set your target date here
     const now = new Date();
     const diff = targetDate - now;
 
+    const days = ref(Math.floor(diff / (1000 * 60 * 60 * 24)));
     const totalHours = ref(Math.floor(diff / (1000 * 60 * 60)));
     const hours = ref(Math.floor((diff / (1000 * 60 * 60)) % 24));
     const minutes = ref(Math.floor((diff / (1000 * 60)) % 60));
@@ -62,13 +66,14 @@ export default {
 
       if (diff <= 0) {
         clearInterval(interval);
+        days.value = 0;
         totalHours.value = 0;
         hours.value = 0;
         minutes.value = 0;
         seconds.value = "00";
         return;
       }
-
+      days.value = Math.floor(diff / (1000 * 60 * 60 * 24));
       totalHours.value = Math.floor(diff / (1000 * 60 * 60));
       hours.value = Math.floor((diff / (1000 * 60 * 60)) % 24);
       minutes.value = Math.floor((diff / (1000 * 60)) % 60);
@@ -91,7 +96,7 @@ export default {
       clearInterval(interval);
     });
 
-    return { raceday, totalHours, hours, minutes, seconds };
+    return { raceday, days, totalHours, hours, minutes, seconds };
   },
 };
 </script>
