@@ -44,9 +44,10 @@ import news5 from "../../../assets/images/news/news5.jpeg";
 import news6 from "../../../assets/images/news/news6.webp";
 import news7 from "../../../assets/images/running-banner.jpeg";
 import news8 from "../../../assets/images/news/news8.jpeg";
-import news9 from "../../../assets/images/roadmap.jpg";
+import news9 from "../../../assets/images/map10km.jpeg";
 import news10 from "../../../assets/images/news/news10.jpg";
 import news11 from "../../../assets/images/news/news11.jpeg";
+import news12 from "../../../assets/images/news/news12.jpeg";
 
 let id = 0;
 const hasMoved = ref(false);
@@ -103,7 +104,7 @@ const slides = [
     title: "Khởi động giải chạy từ thiện khu vực trung tâm TP. Hồ Chí Minh",
     content:
       "VTV.vn - Giải Running Diamond Cup 2024 sẽ diễn ra ngày 7/7/2024 nhằm giúp đỡ những hoàn cảnh khó khăn. Hội Liên hiệp Thanh niên Việt Nam TP. Hồ Chí Minh phối hợp với Diamond Network tổ chức giải Running Diamond Cup 2024 nhằm giúp đỡ những hoàn cảnh khó khăn. Giải chạy với quy mô với hơn 5.000 người, theo đó công dân Việt Nam đủ 18 tuổi trở lên, yêu thích chạy bộ, có đầy đủ sức khoẻ, đều có thể đăng ký tham gia.",
-    img: news2,
+    img: news12,
     url: "https://vtv.vn/news-20240416144249834.htm",
   },
   {
