@@ -34,60 +34,20 @@
 .section-content {
     position: relative !important;
     .row {
-        @media (min-width: 850px) {
-            display: flex;
-        }
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: end;
         justify-content: center;
+        gap: 10px;
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
+        @media (max-width: 890px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     img {
-        width: 100%;
-        border-radius: 10px;
-        scale: 1.41;
-        margin-left: 70px;
         transition: scale 500ms ease-in-out;
-        @media (max-width: 1100px) {
-            scale: 1;
-            margin-top: 60px;
-            margin-left: 0;
-        }
-        @media (max-width: 1600px) {
-            scale: 1.4;
-            margin-left: 55px;
-        }
-        @media (max-width: 1500px) {
-            scale: 1.32;
-            margin-left: 40px;
-            margin-top: 40px;
-        }
-        @media (max-width: 1450px) {
-            scale: 1.28;
-            margin-left: 40px;
-            margin-top: 40px;
-        }
-        @media (max-width: 1400px) {
-            scale: 1.24;
-            margin-left: 30px;
-            margin-top: 58px;
-        }
-        @media (max-width: 1369px) {
-            scale: 1.12;
-            margin-left: 0;
-            margin-top: 108px;
-        }
-        @media (max-width: 1260px) {
-            scale: 1;
-            margin-left: 0;
-            margin-top: 128px;
-        }
-        @media (max-width: 800px) {
-            scale: 1.056;
-            margin-left: 0;
-            margin-top: 40px;
-        }
     }
 }
 
@@ -121,16 +81,6 @@
         text-align: center;
         text-transform: uppercase;
         vertical-align: middle;
-    }
-    @media (min-width: 850px) {
-        &.large-5 {
-            flex-basis: math.percentage(math.div(5, 12));
-            max-width: math.percentage(math.div(5, 12));
-        }
-        &.large-7 {
-            flex-basis: math.percentage(math.div(7, 12));
-            max-width: math.percentage(math.div(7, 12));
-        }
     }
 }
 
