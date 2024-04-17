@@ -9,26 +9,11 @@
             </h1>
             <Carousel v-bind="settings" :breakpoints="breakpoints">
               <Slide v-for="slide in slides" :key="slide.id" class="draggable">
-                <div
-                  class="col"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-offset="200"
-                >
-                  <div
-                    @click.prevent="handleClick(slide.url)"
-                    @mousedown="startDrag"
-                    @mousemove="whileDragging"
-                    @mouseup="stopDrag"
-                  >
+                <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+                  <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag">
                     <img :src="slide.img" alt="so do duong chay" />
                   </div>
-                  <div
-                    @click.prevent="handleClick(slide.url)"
-                    @mousedown="startDrag"
-                    @mousemove="whileDragging"
-                    @mouseup="stopDrag"
-                  >
+                  <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag">
                     <h2 class="marathon_dream_cup_text">{{ slide.title }}</h2>
                   </div>
                   <p>
@@ -57,10 +42,11 @@ import news3 from "../../../assets/images/news/news3.jpeg";
 import news4 from "../../../assets/images/news/news4.jpeg";
 import news5 from "../../../assets/images/news/news5.jpeg";
 import news6 from "../../../assets/images/news/news6.webp";
-import news7 from "../../../assets/images/news/news7.jpeg";
+import news7 from "../../../assets/images/running-banner.jpeg";
 import news8 from "../../../assets/images/news/news8.jpeg";
 import news9 from "../../../assets/images/roadmap.jpg";
 import news10 from "../../../assets/images/news/news10.jpg";
+import news11 from "../../../assets/images/news/news11.jpeg";
 
 let id = 0;
 const hasMoved = ref(false);
@@ -114,12 +100,11 @@ const slides = [
   },
   {
     id: id++,
-    title:
-      "Cung đường đẹp nhất TP Hồ Chí Minh trở thành đường chạy cho Runners của Running Diamond Cup 2024",
+    title: "Khởi động giải chạy từ thiện khu vực trung tâm TP. Hồ Chí Minh",
     content:
-      "VTV.vn - Running Diamond Cup 2024 nhằm thúc đẩy tinh thần thể dục thể thao rèn luyện thể chất lẫn của cộng đồng với thông điệp “Reach Your Dream - Chinh phục ước mơ”.",
+      "VTV.vn - Giải Running Diamond Cup 2024 sẽ diễn ra ngày 7/7/2024 nhằm giúp đỡ những hoàn cảnh khó khăn. Hội Liên hiệp Thanh niên Việt Nam TP. Hồ Chí Minh phối hợp với Diamond Network tổ chức giải Running Diamond Cup 2024 nhằm giúp đỡ những hoàn cảnh khó khăn. Giải chạy với quy mô với hơn 5.000 người, theo đó công dân Việt Nam đủ 18 tuổi trở lên, yêu thích chạy bộ, có đầy đủ sức khoẻ, đều có thể đăng ký tham gia.",
     img: news2,
-    url: "https://vtv.vn/the-thao/cung-duong-dep-nhat-tp-ho-chi-minh-tro-thanh-duong-chay-cho-runners-cua-marathon-dream-cup-2023-20230623095257109.htm",
+    url: "https://vtv.vn/news-20240416144249834.htm",
   },
   {
     id: id++,
@@ -158,11 +143,11 @@ const slides = [
   {
     id: id++,
     title:
-      "Diamond Entertainment ‘bắt tay’ cùng Hội Liên hiệp Thanh niên Việt Nam tổ chức Running Diamond Cup 2024 gây quỹ từ thiện",
+      "Giải chạy Running Diamond Cup 2024 nhằm giúp đỡ những hoàn cảnh khó khăn",
     content:
-      "Diamond Entertainment do siêu mẫu Hồ Đức Vĩnh làm đại diện phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Running Diamond Cup 2024.",
+      "TheThaoVanHoa.vn - Hội Liên hiệp Thanh niên Việt Nam TP.HCM phối hợp với Diamond Network tổ chức giải Running Diamond Cup 2024 nhằm giúp đỡ những hoàn cảnh khó khăn. Running Diamond Cup 2024 với quy mô với hơn 5.000 người, theo đó công dân Việt Nam đủ 18 tuổi trở lên, yêu thích chạy bộ, có đầy đủ sức khoẻ, đều có thể đăng ký tham gia.",
     img: news7,
-    url: "https://thethaongaynay.com.vn/the-thao/diamond-entertainment-bat-tay-cung-hoi-lien-hiep-thanh-nien-viet-nam-to-chuc-marathon-dream-cup-2023-gay-quy-tu-thien.html",
+    url: "https://thethaovanhoa.vn/giai-chay-running-diamond-cup-2024-nham-giup-do-nhung-hoan-canh-kho-khan-20240416150305629.htm",
   },
   {
     id: id++,
@@ -179,6 +164,15 @@ const slides = [
       "Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Running Diamond Cup 2024. Đây là hoạt động nhằm thúc đẩy tinh thần thể dục thể thao rèn luyện thể chất lẫn của cộng đồng với thông điệp “Reach Your Dream – Chinh phục ước mơ”. Thông qua đó, chương trình mong đóng góp quỹ từ thiện cho những mảnh đời khó khăn.",
     img: news9,
     url: "https://laodongtre.laodong.vn/the-thao/to-chuc-giai-chay-tu-thien-qua-cung-duong-dep-nhat-tphcm-1207973.ldo",
+  },
+  {
+    id: id++,
+    title:
+      "Giải chạy quy mô hơn 5.000 người - Running Diamond Cup 2024 đã chính thức khởi động",
+    content:
+      "TienPhong.vn - Hội Liên hiệp Thanh niên Việt Nam TP.HCM phối hợp với Diamond Network tổ chức giải Running Diamond Cup 2024, sau mùa 1 đầy thành công với tên gọi giải chạy Dream Cup 2023, diễn ra ngày 7.7.2024 nhằm giúp đỡ những hoàn cảnh khó khăn.",
+    img: news11,
+    url: "https://tienphong.vn/post-1629444.tpo",
   },
 ];
 
