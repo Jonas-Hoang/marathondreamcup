@@ -44,7 +44,7 @@ import news5 from "../../../assets/images/news/news5.jpeg";
 import news6 from "../../../assets/images/news/news6.webp";
 import news7 from "../../../assets/images/running-banner.jpeg";
 import news8 from "../../../assets/images/news/news8.jpeg";
-import news9 from "../../../assets/images/map10km.jpeg";
+import news9 from "../../../assets/images/map10km.jpg";
 import news10 from "../../../assets/images/news/news10.jpg";
 import news11 from "../../../assets/images/news/news11.jpeg";
 import news12 from "../../../assets/images/news/news12.jpeg";
