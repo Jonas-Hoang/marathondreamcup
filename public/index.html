@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta
+    name="description"
+    content="This is an example of a meta description. It will show up in search engine results as a summary of what the page is about."
+  />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Running Diamond Cup" />
+  <meta property="og:image" content="../assets/images/logo_RDC2024.png" />
+  <meta property="og:description" content="Running Diamond Cup" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="RDC" />
+  <meta property="twitter:image" content="../assets/images/logo_RDC2024.png" />
+  <meta property="twitter:description" content="Running Diamond Cup" />
 
-<head>
+  <head>
     <script>
-        (
-            function(w,d,s,l,i) {
-                w[l]=w[l]||[];
-                w[l].push(
-                    {
-                        'gtm.start':new Date().getTime(),
-                        event:'gtm.js'
-                    }
-                );
-                var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),
-                dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true;
-                j.src = 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-            }
-        )(window,document,'script','dataLayer','GTM-5KQDKM56');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5KQDKM56");
     </script>
-
-    <title>RunningDiamondCup.vn – Chạy Gây Quỹ Từ Thiện Trên Cung Đường Kim Cương</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>logoRDC.png">
-    <meta name="description" content="This is an example of a meta description. It will show up in search engine results as a summary of what the page is about.">
-    <meta name="robots" content="noindex, nofollow">
-    <meta property="og:title" content="Running Diamond Cup" />
-    <meta property="og:image" content="../assets/images/logo_RDC2024.png" />
-    <meta property="og:description" content="Running Diamond Cup" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="RDC" />
-    <meta property="twitter:image" content="../assets/images/logo_RDC2024.png" />
-    <meta property="twitter:description" content="Running Diamond Cup" />
-    <link rel="preload" as="image" href="../assets/images/logo_RDC2024.png">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <title>
-        <%= htmlWebpackPlugin.options.title %>
-    </title>
-
-
-    <body>
-        <noscript>
-        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
-            Please enable it to continue.</strong>
+    <link rel="icon" href="<%= BASE_URL %>logoRDC.png" />
+    <link rel="preload" as="image" href="../assets/images/logo_RDC2024.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+  </head>
+  <title>
+    RunningDiamondCup.vn – Chạy Gây Quỹ Từ Thiện Trên Cung Đường Kim Cương
+  </title>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
-        <div id="app"></div>
-        <!-- built files will be auto injected -->
-    </body>
-
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
