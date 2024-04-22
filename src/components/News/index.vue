@@ -48,6 +48,7 @@ import news9 from "../../../assets/images/map10km.jpg";
 import news10 from "../../../assets/images/news/news10.jpg";
 import news11 from "../../../assets/images/news/news11.jpeg";
 import news12 from "../../../assets/images/news/news12.jpeg";
+import news13 from "../../../assets/images/news/news13.jpeg";
 
 let id = 0;
 const hasMoved = ref(false);
@@ -86,16 +87,15 @@ const slides = [
     title:
       "Khởi động giải chạy 'Cung đường kim cương' với số lượng VĐV tăng gấp đôi",
     content:
-      "Sau mùa 1 đầy thành công với tên gọi giải chạy Dream Cup 2023, Hội Liên hiệp Thanh niên Việt Nam TP.HCM phối hợp với Diamond Network tổ chức giải Running Diamond Cup 2024 diễn ra vào ngày 7.7.2024 nhằm giúp đỡ những hoàn cảnh khó khăn.",
+      "ThanhNien.vn - Sau mùa 1 đầy thành công với tên gọi giải chạy Dream Cup 2023, Hội Liên hiệp Thanh niên Việt Nam TP.HCM phối hợp với Diamond Network tổ chức giải Running Diamond Cup 2024 diễn ra vào ngày 7.7.2024 nhằm giúp đỡ những hoàn cảnh khó khăn.",
     img: news10,
     url: "https://thanhnien.vn/khoi-dong-giai-chay-cung-duong-kim-cuong-voi-so-luong-vdv-tang-gap-doi-185240416095412899.htm",
   },
   {
     id: id++,
-    title:
-      "Cô gái truyền cảm hứng Phạm Thị Hồng Lệ làm đại sứ giải Running Diamond Cup 2024",
+    title: "VĐV Phạm Thị Hồng Lệ đồng hành cùng Running Diamond Cup 2024",
     content:
-      "Giải chạy Running Diamond Cup 2024 đang nhận được sự quan tâm từ những ai yêu thích bộ môn điền kinh, nhất là khi VĐV cự ly 10 km Phạm Thị Hồng Lệ từng đoạt HCV SEA Games 31 được chọn làm đại sứ giải đấu.",
+      "ThanhNien.vn - Running Diamond Cup 2024 là giải chạy với quy mô hơn 5.000 người được Diamond Network và Hội Liên hiệp Thanh niên Việt Nam TP.HCM phối hợp cùng tổ chức vào ngày 07.07.2024. Mục tiêu của giải chạy đó chính là nâng cao ý thức bảo vệ sức khỏe, gắn kết các hoạt động giao lưu, kết nối thông qua chạy marathon và lan tỏa những giá trị tích cực cho cộng đồng.",
     img: news1,
     url: "https://thanhnien.vn/nu-hoang-sea-games-pham-thi-hong-le-lam-dai-su-giai-marathon-dream-cup-2023-1852306291024291.htm#",
   },
@@ -109,40 +109,6 @@ const slides = [
   },
   {
     id: id++,
-    title: 'Giải Marathon thiện nguyện với tiền thưởng "khủng"',
-    content:
-      "(NLĐO) - Hội Liên hiệp Thanh niên Việt Nam TP HCM phối hợp với Diamond Entertainment tổ chức Giải Running Diamond Cup 2024 từ ngày 30-7 nhằm giúp đỡ những hoàn cảnh khó khăn",
-    img: news3,
-    url: "https://nld.com.vn/the-thao/giai-marathon-thien-nguyen-voi-tien-thuong-khung-20230623132610498.htm",
-  },
-  {
-    id: id++,
-    title: "Ca sĩ Đức Tuấn tham gia giải marathon cùng Hồ Đức Vĩnh",
-    content:
-      "Hồ Đức Vĩnh tiết lộ ca sĩ Đức Tuấn sẽ góp mặt trong giải marathon do anh tổ chức. Đây là một dự án tâm huyết của nam người mẫu nhằm nâng cao tinh thần rèn luyện thể thao của mọi người.",
-    img: news4,
-    url: "https://thanhnien.vn/ca-si-duc-tuan-tham-gia-giai-marathon-cung-ho-duc-vinh-185230623101519483.htm",
-  },
-  {
-    id: id++,
-    title:
-      "Running Diamond Cup 2024 - Reach Your Dream: Tổng giá trị giải thưởng lên đến gần 150 triệu đồng",
-    content:
-      "Diamond Entertainment do siêu mẫu Hồ Đức Vĩnh làm đại diện phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Running Diamond Cup 2024.",
-    img: news5,
-    url: "https://thethao.sggp.org.vn/marathon-dream-cup-2023-reach-your-dream-tong-gia-tri-giai-thuong-len-den-gan-150-trieu-dong-post694749.html",
-  },
-  {
-    id: id++,
-    title:
-      "Siêu mẫu Hồ Đức Vĩnh và loạt sao Việt tham gia giải chạy gây quỹ thiện nguyện",
-    content:
-      "Mới đây, siêu mẫu Hồ Đức Vĩnh đã phối hợp cùng Hội Liên hiệp Thanh niên Việt Nam TP.HCM phát động giải chạy Running Diamond Cup 2024 vì cộng đồng.",
-    img: news6,
-    url: "https://soha.vn/sieu-mau-ho-duc-vinh-va-loat-sao-viet-tham-gia-giai-chay-gay-quy-thien-nguyen-20230623105225775.htm",
-  },
-  {
-    id: id++,
     title:
       "Giải chạy Running Diamond Cup 2024 nhằm giúp đỡ những hoàn cảnh khó khăn",
     content:
@@ -152,19 +118,20 @@ const slides = [
   },
   {
     id: id++,
-    title: "Siêu mẫu Hồ Đức Vĩnh: ‘Chạy bộ giúp tôi vượt qua những lúc bế tắc’",
+    title: "VĐV Phạm Thị Hồng Lệ làm đại sứ Running Diamond Cup 2024",
     content:
-      "Nam siêu mẫu tổ chức giải chạy từ thiện có tên “Running Diamond Cup 2024” để lan tỏa những nguồn năng lượng tích cực từ hoạt động chạy bộ.",
-    img: news8,
-    url: "https://vtcnews.vn/sieu-mau-ho-duc-vinh-chay-bo-giup-toi-vuot-qua-nhung-luc-be-tac-ar801419.html",
+      "TheThaoNgayNay.com.vn - Siêu mẫu Hồ Đức Vĩnh – Trưởng Ban tổ chức (BTC) Giải “Running Diamond Cup 2024 – Bước chạy rực rỡ trên cung đường kim cương” vừa công bố Vận động viên Điền kinh Phạm Thị Hồng Lệ là Đại sứ của giải chạy.",
+    img: news3,
+    url: "https://thethaongaynay.com.vn/the-thao/vdv-pham-thi-hong-le-lam-dai-su-running-diamond-cup-2024.html",
   },
   {
     id: id++,
-    title: "Tổ chức giải chạy từ thiện qua cung đường đẹp nhất TPHCM",
+    title:
+      "Đại sứ Running Diamond Cup 2024 VĐV Phạm Thị Hồng Lệ - Đồng hành gây quỹ san sẻ tình yêu thương",
     content:
-      "Hội Liên hiệp Thanh niên Việt Nam TPHCM tổ chức giải chạy Running Diamond Cup 2024. Đây là hoạt động nhằm thúc đẩy tinh thần thể dục thể thao rèn luyện thể chất lẫn của cộng đồng với thông điệp “Reach Your Dream – Chinh phục ước mơ”. Thông qua đó, chương trình mong đóng góp quỹ từ thiện cho những mảnh đời khó khăn.",
-    img: news9,
-    url: "https://laodongtre.laodong.vn/the-thao/to-chuc-giai-chay-tu-thien-qua-cung-duong-dep-nhat-tphcm-1207973.ldo",
+      "TienPhong.vn - Nghị lực của Hồng Lệ được thể hiện ở việc cô vượt qua những khó khăn trong quá trình tập luyện. Năm 2016, cô gái quê Bình Định phải mổ ruột thừa, sau đó tăng hơn 5kg so với ban đầu. Chính điều này kéo theo thành tích của cô suy giảm. Tuy nhiên một năm sau, bằng sự nỗ lực của mình, Hồng Lệ trở về con số cũ nhờ ép cân và cải thiện được loạt thành tích đáng tự hào.",
+    img: news13,
+    url: "https://tienphong.vn/dai-su-running-diamond-cup-2024-vdv-pham-thi-hong-le-dong-hanh-gay-quy-san-se-tinh-yeu-thuong-post1630558.tpo",
   },
   {
     id: id++,
@@ -174,6 +141,14 @@ const slides = [
       "TienPhong.vn - Hội Liên hiệp Thanh niên Việt Nam TP.HCM phối hợp với Diamond Network tổ chức giải Running Diamond Cup 2024, sau mùa 1 đầy thành công với tên gọi giải chạy Dream Cup 2023, diễn ra ngày 7.7.2024 nhằm giúp đỡ những hoàn cảnh khó khăn.",
     img: news11,
     url: "https://tienphong.vn/post-1629444.tpo",
+  },
+  {
+    id: id++,
+    title: "Kỷ lục gia Phạm Thị Hồng Lệ tham dự Giải Running Diamond Cup 2024",
+    content:
+      "BaoMoi.com - Giàu thành tích ở bộ môn Điền kinh và luôn khát khao chạm đến đỉnh cao khi thi đấu, VĐV Phạm Thị Hồng Lệ trở thành Đại sứ của Running Diamond Cup 2024.",
+    img: news3,
+    url: "https://baomoi.com/ky-luc-gia-pham-thi-hong-le-tham-du-giai-running-diamond-cup-2024-c48901248.epi",
   },
 ];
 
