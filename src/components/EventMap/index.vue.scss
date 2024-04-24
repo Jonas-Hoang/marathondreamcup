@@ -141,7 +141,8 @@
   @media (min-width: 450px) {
     height: 600px;
     .col img {
-      height: 400px;
+      height: 420px;
+      width: 450px;
     }
   }
   @media (min-width: 480px) {
@@ -150,18 +151,30 @@
     .row {
       padding: 10px 0px;
     }
+    .col img {
+      height: 500px;
+      width: 550px;
+    }
   }
   @media (min-width: 510px) {
     height: 660px;
   }
   @media (min-width: 540px) {
     height: 690px;
+    .col img {
+      height: 550px;
+      width: 600px;
+    }
   }
   @media (min-width: 570px) {
     height: 720px;
   }
   @media (min-width: 600px) {
     height: 750px;
+    .col img {
+      height: 600px;
+      width: 650px;
+    }
   }
   @media (min-width: 630px) {
     height: 780px;
@@ -171,15 +184,27 @@
   }
   @media (min-width: 690px) {
     height: 840px;
+    .col img {
+      height: 650px;
+      width: 700px;
+    }
   }
   @media (min-width: 720px) {
     height: 870px;
   }
   @media (min-width: 760px) {
     height: 910px;
+    .col img {
+      height: 700px;
+      width: 750px;
+    }
   }
   @media (min-width: 800px) {
     height: 950px;
+    .col img {
+      height: 770px;
+      width: 800px;
+    }
   }
   @media (min-width: 840px) {
     height: 990px;
@@ -189,11 +214,18 @@
   }
   @media (min-width: 940px) {
     height: 1090px;
+    .col img {
+      height: 800px;
+    }
   }
   @media (min-width: 1000px) {
     height: 650px;
     .col h2 {
       text-align: start;
+    }
+    .col img {
+      height: 470px;
+      width: 500px;
     }
   }
   @media (min-width: 1100px) {
@@ -201,5 +233,9 @@
   }
   @media (min-width: 1200px) {
     height: 800px;
+    .col img {
+      height: 550px;
+      width: 600px;
+    }
   }
 }
