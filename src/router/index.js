@@ -19,6 +19,12 @@ const routes = [{
             import ("@/views/result-running.vue"),
     },
     {
+        path: "/admin",
+        name: "AdminPage",
+        component: () =>
+            import ("@/views/admin.vue"),
+    },
+    {
         path: "/tim-kiem",
         name: "SearchSection",
         component: () =>

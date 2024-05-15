@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-wrap items-center justify-between px-2 py-3 bg-[#3055A6] text-gray-100 sticky top-0 z-50">
+  <nav v-if="nowPath !==  '/admin'" class="flex flex-wrap items-center justify-between px-2 py-3 bg-[#3055A6] text-gray-100 sticky top-0 z-50">
     <div class="w-[100%] px-4 mx-auto flex flex-wrap items-center justify-between">
       <div>
         <button @click=" isMobileMenuOpen=!isMobileMenuOpen" class="lg:hidden" aria-label="Toggle menu">
@@ -76,6 +76,7 @@ export default {
     const isMobileMenuOpen = ref(false);
     const selectedLink = ref("");
     const selectedRouter = ref("");
+    const nowPath = window.location.pathname;
     const links = ref([
       { text: "GIỚI THIỆU SỰ KIỆN", href: "#about", type: "a" },
       { text: "QUY ĐỊNH VÀ ĐIỀU LỆ", href: "#term-section", type: "a" },
@@ -138,6 +139,7 @@ export default {
       selectedLink,
       selectedRouter,
       logo,
+      nowPath,
       closeMenu,
       selectLink,
       selectRouter,
