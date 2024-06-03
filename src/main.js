@@ -5,11 +5,13 @@ import AOS from "aos";
 import router from "./router";
 import VueLazyload from "vue-lazyload";
 import "aos/dist/aos.css";
+import LottieAnimation from "lottie-web-vue";
 
 const app = createApp(App);
 
 app
     .use(router)
+    .use(LottieAnimation)
     .use(VueLazyload, {
         preLoad: 1.3,
         attempt: 1,

@@ -6,17 +6,62 @@
       </div>
     </div>
     <div class="admin-body">
-      <AdminUpload />
+      <!-- <AdminUpload /> -->
+
+      <div class="w-full mt-6">
+        <LottieAnimation :animation-data="Animation" :auto-play="true" :loop="true" :speed="1" ref="anim" />
+        <!-- <iframe src="https://lottie.host/embed/ab396e01-5adf-464a-a487-70c584bd4288/ar01xcjRDz.json"></iframe> -->
+      </div>
+
+      <div>
+        <input type="file" @change="uploadImage" />
+      </div>
+
     </div>
   </div>
 </template>
 
+
+<script>
+import { supabase } from "../supabase";
+
+export default {
+  methods: {
+    async uploadImage(event) {
+      const file = event.target.files[0];
+      const { data, error } = await supabase.storage
+        .from("imageUpload")
+        .upload(`public/${file.name}`, file);
+
+      if (error) {
+        console.error(error);
+      } else {
+        console.log("File uploaded successfully", data);
+        alert("File uploaded success");
+      }
+    },
+  },
+};
+</script>
+
 <script setup>
 import { defineAsyncComponent } from "vue";
+  import { onMounted, ref } from "vue";
+  import { LottieAnimation } from "lottie-web-vue";
+  import Animation from "../../assets/json/animation.json";
 
-const AdminUpload = defineAsyncComponent(() =>
-  import("@/components/AdminUpload/index.vue")
-);
+  let anim = ref();
+
+  onMounted(() => {
+    setTimeout(() => {
+      console.log(anim.value.goToAndPlay(150, true));
+      anim.value;
+    }, 500);
+  });
+
+// const AdminUpload = defineAsyncComponent(() =>
+//   import("@/components/AdminUpload/index.vue")
+// );
 </script>
 
 <style lang="scss">
