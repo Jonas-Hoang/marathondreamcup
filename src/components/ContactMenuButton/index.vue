@@ -8,7 +8,7 @@
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#1877f2]">
             <a target="_blank" href="https://www.facebook.com/profile.php?id=61558016510583">
-              <img src="../../../assets/images/facebook-logo.png" alt="facbook-logo">
+              <img src="../../../assets/images/facebook-logo.png" alt="facbook-logo running diamond cup">
             </a>
           </div>
         </div>
@@ -21,7 +21,7 @@
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#1877f2]">
             <a target="_blank" href="https://zalo.me/0367755266">
-              <img src="../../../assets/images/zalo-logo.png" alt="zalo-logo">
+              <img src="../../../assets/images/zalo-logo.png" alt="zalo-logo running diamond cup">
             </a>
           </div>
         </div>
@@ -34,7 +34,7 @@
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#81d742]">
             <a href="tel:0367755266">
-              <img src="../../../assets/images/phone-logo.png" alt="phone-logo">
+              <img src="../../../assets/images/phone-logo.png" alt="phone-logo running diamond cup">
             </a>
           </div>
         </div>

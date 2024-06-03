@@ -10,7 +10,7 @@
       </div>
       <div class="logo_main relative flex justify-between lg:w-auto  pr-4 lg:static lg:block lg:justify-start">
         <router-link to="/" @click="scrollTo">
-          <el-image style="height: 60px; width: 100%;" :src="logo" fit="cover" lazy alt="logo" />
+          <el-image style="height: 60px; width: 100%;" :src="logo" fit="cover" lazy alt="Running Diamond Cup Logo" />
         </router-link>
       </div>
       <div v-bind:class="{'hidden': !isMobileMenuOpen, 'flex': isMobileMenuOpen}" class="lg:flex lg:flex-grow items-center">

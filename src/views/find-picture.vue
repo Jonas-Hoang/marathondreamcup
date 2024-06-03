@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <iframe src="https://enjoysport.vn/embed/marathon-dream-cup-2023" name="iframe_a" title="Running Diamond Cup 2024" width="100%" height="1500 scrolling="></iframe>
-    <div class="min-h-screen bg-gray-100 flex items-center justify-center" data-id="1">
+    <!-- <div class="min-h-screen bg-gray-100 flex items-center justify-center" data-id="1">
       <div class="rounded-lg border text-card-foreground w-full max-w-md mx-auto bg-white shadow-md" data-id="2" data-v0-t="card">
         <div class="flex flex-col space-y-1.5 p-6" data-id="3">
           <h3 class="whitespace-nowrap tracking-tight text-blue-600 text-3xl font-bold text-center" data-id="4">Login</h3>
@@ -24,7 +24,7 @@
           <div class="flex justify-between items-center mt-4" data-id="15"><a class="text-sm text-gray-600 hover:text-indigo-500" data-id="16" href="#">Forgot Password?</a><a class="text-sm text-indigo-600 hover:text-indigo-500" data-id="17" href="#">Create Account</a></div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
