@@ -16,23 +16,23 @@
                   Sải bước chiến thắng cùng
                 </h2>
                 <div class="flex items-center justify-center mb-6 px-[30px]">
-                  <span class="text-[#214184] my-[15px] text-3xl font-bold">Running Diamond Cup 2024</span>
+                  <h1 class="text-[#214184] my-[15px] text-3xl font-bold">Running Diamond Cup 2024</h1>
                 </div>
-                <span class="text-[#214184] font-[400] text-lg mb-6" style="font-size: 110%">
+                <h2 class="text-[#214184] font-[400] text-lg mb-6" style="font-size: 110%">
                   Running Diamond Cup 2024 sẽ có 02 cự ly, gồm 5km và 10km dành
                   cho các vận động viên phong trào nam và nữ. Cung đường chạy
                   của giải đấu với những con đường mang vẻ đẹp nên thơ, vừa chất
                   chứa dấu ấn xưa cổ, hoà cùng vẻ đẹp phồn hoa, hiện đại chắc
                   chắn sẽ gợi nên những rung cảm và tạo được những dấu ấn khó
                   quên cho Runners.
-                </span>
-                <span class="font-[400] text-[#214184] text-lg" style="font-size: 110%">
+                </h2>
+                <h2 class="font-[400] text-[#214184] text-lg" style="font-size: 110%">
                   Khi đăng ký Running Diamond Cup 2024 là bạn đang góp thêm hạnh
                   phúc đến mọi người, vì với lệ phí từ mỗi một thành viên tham
                   gia, Diamond Network sẽ trao đến Hội Liên hiệp Thanh niên Việt
                   Nam Thành Phố Hồ Chí Minh số tiền 100.000 VND để hỗ trợ cho
                   những hoàn cảnh khó khăn.
-                </span>
+                </h2>
               </div>
             </div>
             <div v-if="$isMobile()" class="col medium-5 small-12 large-7" data-aos="fade-up" data-aos-duration="1000">
@@ -41,23 +41,23 @@
                   Sải bước chiến thắng cùng
                 </h2>
                 <div class="flex items-center justify-center mb-6 px-[30px]">
-                  <span class="text-center text-[#214184] my-[15px] text-3xl font-semibold">Running Diamond Cup 2024</span>
+                  <h2 class="text-center text-[#214184] my-[15px] text-3xl font-semibold">Running Diamond Cup 2024</h2>
                 </div>
-                <span class="text-[#214184] font-[300] text-lg mb-6" style="font-size: 110%">
+                <h2 class="text-[#214184] font-[300] text-lg mb-6" style="font-size: 110%">
                   Running Diamond Cup 2024 sẽ có 02 cự ly, gồm 5km và 10km dành
                   cho các vận động viên phong trào nam và nữ. Cung đường chạy
                   của giải đấu với những con đường mang vẻ đẹp nên thơ, vừa chất
                   chứa dấu ấn xưa cổ, hoà cùng vẻ đẹp phồn hoa, hiện đại chắc
                   chắn sẽ gợi nên những rung cảm và tạo được những dấu ấn khó
                   quên cho Runners.
-                </span>
-                <span class="text-[#214184] font-[300] text-lg" style="font-size: 110%">
+                </h2>
+                <h2 class="text-[#214184] font-[300] text-lg" style="font-size: 110%">
                   Khi đăng ký Running Diamond Cup 2024 là bạn đang góp thêm hạnh
                   phúc đến mọi người, vì với lệ phí từ mỗi một thành viên tham
                   gia, Diamond Network sẽ trao đến Hội Liên hiệp Thanh niên Việt
                   Nam Thành Phố Hồ Chí Minh số tiền 100.000 VND để hỗ trợ cho
                   những hoàn cảnh khó khăn.
-                </span>
+                </h2>
               </div>
             </div>
           </div>

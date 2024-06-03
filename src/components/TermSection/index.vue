@@ -7,10 +7,10 @@
         </div>
         <div class="section-content relative">
           <div class="row align-middle">
-            <div class="col medium-5 small-12 large-7" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="200">
+            <div class="col medium-5 small-12 large-7 mb-[50px]" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="200">
               <h2 v-if="!$isMobile()" class="font-bold uppercase size italic text-4xl text-start mb-4 text-[#faab25]">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
               <h2 v-if="$isMobile()" class="font-bold uppercase size italic text-4xl text-center mb-4 text-[#faab25]">ĐIỀU KHOẢN & ĐIỀU KIỆN</h2>
-              <p class="text-center font-[600] !text-[27px] text-[#214184]">Running Diamond Cup 2024</p>
+              <h2 class="text-center font-[600] !text-[27px] text-[#214184]">Running Diamond Cup 2024</h2>
               <a class="button bg-[#ffbe4e] my-[20px] text-black px-[1em] max-w-[100%] hover:bg-[#f5ca66]" rel="noopener noreferrer" href="https://drive.google.com/file/d/1314JujSnObg_8tVDFhstFbHWASh7F2Ez/view" target="_blank" style="border-radius: 99px"><span>Đọc kỹ điều khoản &amp; điều kiện</span><i class="icon-angle-right" aria-hidden="true"></i></a>
               <div class="ux-timer">
                 <span>{{days}}<br /><strong>ngày</strong></span>
