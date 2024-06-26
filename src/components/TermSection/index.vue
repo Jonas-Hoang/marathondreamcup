@@ -1,7 +1,7 @@
 <template>
   <div id="term-section">
     <div class="term-section text-[#f1f1f1] relative">
-      <section class="section pt-[65px]">
+      <section class="section pt-[40px]">
         <div class="bg section-bg fill ">
           <div class="section-bg-overlay absolute fill"></div>
         </div>
@@ -18,7 +18,7 @@
                 <span>{{minutes}}<br /><strong>phút</strong></span>
                 <span>{{seconds}}<br /><strong>giây</strong></span>
               </div>
-              <span class="text-[400] mt-[15px] text-[22px] mb-[10px] text-[#214184]">Đếm ngược tới ngày sự kiện diễn ra với</span>
+              <span class="text-[400] mt-[15px] text-[22px] mb-[30px] text-[#214184]">Đếm ngược tới ngày sự kiện diễn ra với</span>
             </div>
             <div class="col medium-5 small-12 large-5 " style="paddingp-bottom: 0 !important;" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
               <div class="flex flex-col justify-center">
@@ -43,7 +43,7 @@ export default {
     msg: String,
   },
   setup() {
-    const targetDate = new Date("2024-07-01T00:00:00"); // Set your target date here
+    const targetDate = new Date("2024-07-07T00:00:00"); // Set your target date here
     const now = new Date();
     const diff = targetDate - now;
 
