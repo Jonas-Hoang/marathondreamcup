@@ -21,7 +21,7 @@
             <Carousel :modelValue="currentSlideIndex" @update:modelValue="handleSlideChange" @init="handleInit" @slide-start="handleSlideStart" :items-to-show="1" snapAlign="center" :wrap-around="false" :autoplay="7000" :transition="1000">
               <Slide v-for="link in links" :key="link.id" class="draggable">
                 <div class="rounded-[15px]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay='500'>
-                  <img :src="link.imageUrl" alt="so do duong chay" />
+                  <img v-lazy="link.imageUrl" alt="Muc dich Running Diamond Cup" />
                 </div>
               </Slide>
             </Carousel>
@@ -30,7 +30,7 @@
             <Carousel :modelValue="currentSlideIndex" @update:modelValue="handleSlideChange" @init="handleInit" @slide-start="handleSlideStart" :items-to-show="1" snapAlign="center" :wrap-around="false" :autoplay="7000" :transition="1000">
               <Slide v-for="link in links" :key="link.id" class="draggable">
                 <div class="rounded-[15px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay='500'>
-                  <img :src="link.imageUrl" alt="so do duong chay" />
+                  <img v-lazy="link.imageUrl" alt="Muc dich Running Diamond Cup" />
                 </div>
               </Slide>
             </Carousel>

@@ -8,7 +8,7 @@
               <Slide v-for="slide in slides" :key="slide.id">
                 <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
                   <h2>{{ slide.title }}</h2>
-                  <img :src="slide.url" alt="so do duong chay" />
+                  <img v-lazy="slide.url" alt="Giai thuong" />
                 </div>
               </Slide>
               <template #addons>

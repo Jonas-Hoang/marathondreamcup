@@ -8,7 +8,7 @@
         <div class="section-content relative">
           <div class="row align-middle">
             <div class="col medium-5 small-12 large-5" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
-              <img :src="running_banner" :data-src="running_banner" v-lazy="running_banner" alt="adtervise-image" width="300" height="500" />
+              <img :data-src="running_banner" v-lazy="running_banner" alt="adtervise-image" width="300" height="500" />
             </div>
             <div v-if="!$isMobile()" class="col medium-5 small-12 large-7" data-aos="fade-left" data-aos-duration="1000">
               <div class="flex flex-col justify-center text-[#214184]">

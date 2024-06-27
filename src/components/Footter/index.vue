@@ -10,7 +10,7 @@
                 <h4 class="partner">Đơn vị tổ chức</h4>
               </div>
               <div class="img has-hover x md-x lg-x y md-y lg-y w-[53%]">
-                <div class="img-inner dark"><img width="701" height="450" src="../../../assets/images/logo_DN_DiamondNetwork.png" data-src="../../../assets/images/logo_DN_DiamondNetwork.png" class="attachment-original size-original lazy-load-active" alt="logo_doanh-nghiep" decoding="async" srcset="../../../assets/images/logo_DN_DiamondNetwork.png"></div>
+                <div class="img-inner dark"><img width="701" height="450" v-lazy="logo_diamondnetwork" :data-src="logo_diamondnetwork" class="attachment-original size-original lazy-load-active" alt="logo_doanh-nghiep" decoding="async"></div>
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@
             <div class="col-inner">
               <h4>Bảo trợ truyền thông</h4>
               <div class="img has-hover x md-x lg-x y md-y lg-y">
-                <div class="img-inner dark"><img width="1020" height="517" src="../../../assets/images/bao-tro-truyen-thong.png" data-src="../../../assets/images/bao-tro-truyen-thong.png" data-srcset="../../../assets/images/bao-tro-truyen-thong.png" alt="logo_truyen_thong"></div>
+                <div class="img-inner dark"><img width="1020" height="517" v-lazy="bao_tro_truyen_thong" :data-src="bao_tro_truyen_thong" :data-srcset="bao_tro_truyen_thong" alt="logo_truyen_thong"></div>
               </div>
             </div>
           </div>
@@ -35,6 +35,11 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import logo_diamondnetwork from "../../../assets/images/logo_DN_DiamondNetwork.png";
+import bao_tro_truyen_thong from "../../../assets/images/bao-tro-truyen-thong.png";
+</script>
 
 <script>
 export default {

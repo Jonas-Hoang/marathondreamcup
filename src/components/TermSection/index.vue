@@ -22,7 +22,7 @@
             </div>
             <div class="col medium-5 small-12 large-5 " style="paddingp-bottom: 0 !important;" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
               <div class="flex flex-col justify-center">
-                <img width="816" height="929" :src="raceday" :data-src="raceday" v-lazy="raceday" alt="term-image" />
+                <img width="816" height="929" :data-src="raceday" v-lazy="raceday" alt="term-image" />
               </div>
             </div>
           </div>

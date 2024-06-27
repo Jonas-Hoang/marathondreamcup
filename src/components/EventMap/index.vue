@@ -12,7 +12,7 @@
                 data-aos-offset="200"
               >
                 <h2>{{ slide.title }}</h2>
-                <img :src="slide.url" alt="so do duong chay" />
+                <img v-lazy="slide.url" alt="so do duong chay" />
               </div>
             </Slide>
             <template #addons>

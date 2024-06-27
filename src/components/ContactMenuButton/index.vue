@@ -8,7 +8,7 @@
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#1877f2]">
             <a target="_blank" href="https://www.facebook.com/profile.php?id=61558016510583">
-              <img src="../../../assets/images/facebook-logo.png" alt="facbook-logo">
+              <img v-lazy="fb_logo" alt="facbook-logo">
             </a>
           </div>
         </div>
@@ -21,7 +21,7 @@
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#1877f2]">
             <a target="_blank" href="https://zalo.me/0367755266">
-              <img src="../../../assets/images/zalo-logo.png" alt="zalo-logo">
+              <img v-lazy="zalo_logo" alt="zalo-logo">
             </a>
           </div>
         </div>
@@ -34,7 +34,7 @@
           <div class="phone-vr-circle-fill"></div>
           <div class="phone-vr-img-circle !bg-[#81d742]">
             <a href="tel:0367755266">
-              <img src="../../../assets/images/phone-logo.png" alt="phone-logo">
+              <img v-lazy="numberphone_logo" alt="phone-logo">
             </a>
           </div>
         </div>
@@ -45,6 +45,13 @@
 
   </div>
 </template>
+
+<script setup>
+import fb_logo from "../../../assets/images/facebook-logo.png";
+import zalo_logo from "../../../assets/images/zalo-logo.png";
+import numberphone_logo from "../../../assets/images/phone-logo.png";
+</script>
+
 <script>
 export default {
   name: "ContactMenuButton",

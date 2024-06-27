@@ -11,7 +11,7 @@
               <Slide v-for="slide in slides" :key="slide.id" class="draggable">
                 <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
                   <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag">
-                    <img :src="slide.img" alt="so do duong chay" />
+                    <img v-lazy="slide.img" alt="so do duong chay" />
                   </div>
                   <div @click.prevent="handleClick(slide.url)" @mousedown="startDrag" @mousemove="whileDragging" @mouseup="stopDrag">
                     <h2 class="marathon_dream_cup_text">{{ slide.title }}</h2>
