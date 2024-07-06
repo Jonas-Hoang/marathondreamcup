@@ -83,7 +83,7 @@ export default {
       { text: "ĐĂNG KÝ", href: "#sign-up", type: "a" },
       { text: "TIN TỨC", href: "#news", type: "a" },
       { text: "ĐỐI TÁC", href: "#partner", type: "a" },
-      { text: "TÌM ẢNH", name: "FindPicture", type: "router-link" },
+      { text: "ẢNH GIẢI CHẠY 7.7.2024", name: "FindPicture", type: "router-link" },
       { text: "KẾT QUẢ", name: "ResultRunning", type: "router-link" },
     ]);
     const logo = ref(logoURL);
